@@ -42,11 +42,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IArticulosModule.cs" />
+    <Compile Include="Module\ArticulosModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Interfaces\" />
-    <Folder Include="Module\" />
+    <ProjectReference Include="..\UTNData\UTNData.csproj">
+      <Project>{BE516170-7DE9-45DC-B979-9AE8726C4331}</Project>
+      <Name>UTNData</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
