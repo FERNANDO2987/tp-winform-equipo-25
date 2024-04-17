@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace UTNData.Models
 {
-    public class Categoria
+     public class Marca
     {
+        public int Id { get; set; }
+        public string Descripcion { get; set; }
     }
 }

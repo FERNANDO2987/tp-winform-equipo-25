@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UTNData.Models
+namespace UTNData.Entity
 {
-     public class Marca
+    public class Imagenes
     {
+        //falta hacer por Ariel 
     }
 }

@@ -42,9 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Articulos.cs" />
-    <Compile Include="Models\Categoria.cs" />
-    <Compile Include="Models\Marca.cs" />
+    <Compile Include="Entity\Articulos.cs" />
+    <Compile Include="Entity\Categoria.cs" />
+    <Compile Include="Entity\Imagenes.cs" />
+    <Compile Include="Entity\Marca.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
