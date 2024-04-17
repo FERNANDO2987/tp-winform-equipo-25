@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{42D433D1-49F4-423A-ADE7-C589A57FE38E}</ProjectGuid>
+    <ProjectGuid>{BE516170-7DE9-45DC-B979-9AE8726C4331}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UTNBusiness</RootNamespace>
-    <AssemblyName>UTNBusiness</AssemblyName>
+    <RootNamespace>UTNData</RootNamespace>
+    <AssemblyName>UTNData</AssemblyName>
     <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,11 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Articulos.cs" />
+    <Compile Include="Models\Categoria.cs" />
+    <Compile Include="Models\Marca.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Interfaces\" />
-    <Folder Include="Module\" />
+    <Folder Include="Repository\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
