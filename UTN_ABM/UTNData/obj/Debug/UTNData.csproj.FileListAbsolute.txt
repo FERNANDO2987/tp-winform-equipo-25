@@ -1,0 +1,16 @@
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\UTN_ABM\UTN_ABM\UTN_ABM\UTN_ABM\UTNData\bin\Debug\UTNData.dll.config
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\UTN_ABM\UTN_ABM\UTN_ABM\UTN_ABM\UTNData\bin\Debug\UTNData.dll
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\UTN_ABM\UTN_ABM\UTN_ABM\UTN_ABM\UTNData\bin\Debug\UTNData.pdb
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\UTN_ABM\UTN_ABM\UTN_ABM\UTN_ABM\UTNData\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\UTN_ABM\UTN_ABM\UTN_ABM\UTN_ABM\UTNData\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\UTN_ABM\UTN_ABM\UTN_ABM\UTN_ABM\UTNData\bin\Debug\System.Buffers.dll
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\UTN_ABM\UTN_ABM\UTN_ABM\UTN_ABM\UTNData\bin\Debug\System.Memory.dll
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\UTN_ABM\UTN_ABM\UTN_ABM\UTN_ABM\UTNData\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\UTN_ABM\UTN_ABM\UTN_ABM\UTN_ABM\UTNData\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\UTN_ABM\UTN_ABM\UTN_ABM\UTN_ABM\UTNData\bin\Debug\System.ValueTuple.dll
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\UTN_ABM\UTN_ABM\UTN_ABM\UTN_ABM\UTNData\bin\Debug\System.Buffers.xml
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\UTN_ABM\UTN_ABM\UTN_ABM\UTN_ABM\UTNData\obj\Debug\UTNData.csproj.AssemblyReference.cache
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\UTN_ABM\UTN_ABM\UTN_ABM\UTN_ABM\UTNData\obj\Debug\UTNData.csproj.CoreCompileInputs.cache
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\UTN_ABM\UTN_ABM\UTN_ABM\UTN_ABM\UTNData\obj\Debug\UTNData.csproj.Up2Date
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\UTN_ABM\UTN_ABM\UTN_ABM\UTN_ABM\UTNData\obj\Debug\UTNData.dll
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\UTN_ABM\UTN_ABM\UTN_ABM\UTN_ABM\UTNData\obj\Debug\UTNData.pdb

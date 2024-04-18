@@ -14,6 +14,7 @@ namespace UTNData.Entity
         public string imagenURL{ get; set; }
 
 
+
         // hecho. 
     }
 }
