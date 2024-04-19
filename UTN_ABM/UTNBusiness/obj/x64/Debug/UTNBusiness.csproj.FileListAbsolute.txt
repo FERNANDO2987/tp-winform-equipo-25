@@ -1,0 +1,2 @@
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\obj\x64\Debug\UTNBusiness.csproj.AssemblyReference.cache
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\obj\x64\Debug\UTNBusiness.csproj.CoreCompileInputs.cache

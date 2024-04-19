@@ -5,22 +5,22 @@ VisualStudioVersion = 17.10.34607.79
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UTNBusiness", "UTNBusiness\UTNBusiness.csproj", "{42D433D1-49F4-423A-ADE7-C589A57FE38E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UTNData", "UTNData\UTNData.csproj", "{BE516170-7DE9-45DC-B979-9AE8726C4331}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{42D433D1-49F4-423A-ADE7-C589A57FE38E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{42D433D1-49F4-423A-ADE7-C589A57FE38E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42D433D1-49F4-423A-ADE7-C589A57FE38E}.Debug|x64.ActiveCfg = Debug|x64
+		{42D433D1-49F4-423A-ADE7-C589A57FE38E}.Debug|x64.Build.0 = Debug|x64
 		{42D433D1-49F4-423A-ADE7-C589A57FE38E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42D433D1-49F4-423A-ADE7-C589A57FE38E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BE516170-7DE9-45DC-B979-9AE8726C4331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BE516170-7DE9-45DC-B979-9AE8726C4331}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BE516170-7DE9-45DC-B979-9AE8726C4331}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BE516170-7DE9-45DC-B979-9AE8726C4331}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42D433D1-49F4-423A-ADE7-C589A57FE38E}.Release|x64.ActiveCfg = Release|x64
+		{42D433D1-49F4-423A-ADE7-C589A57FE38E}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
