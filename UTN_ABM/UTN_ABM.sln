@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.34607.79
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UTNBusiness", "UTNBusiness\UTNBusiness.csproj", "{42D433D1-49F4-423A-ADE7-C589A57FE38E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UTNFormsApP", "UTNFormsApP\UTNFormsApP.csproj", "{FD368FB8-528A-43E2-A7FD-CB839E9FA440}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,14 @@ Global
 		{42D433D1-49F4-423A-ADE7-C589A57FE38E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{42D433D1-49F4-423A-ADE7-C589A57FE38E}.Release|x64.ActiveCfg = Release|x64
 		{42D433D1-49F4-423A-ADE7-C589A57FE38E}.Release|x64.Build.0 = Release|x64
+		{FD368FB8-528A-43E2-A7FD-CB839E9FA440}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD368FB8-528A-43E2-A7FD-CB839E9FA440}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD368FB8-528A-43E2-A7FD-CB839E9FA440}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FD368FB8-528A-43E2-A7FD-CB839E9FA440}.Debug|x64.Build.0 = Debug|Any CPU
+		{FD368FB8-528A-43E2-A7FD-CB839E9FA440}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD368FB8-528A-43E2-A7FD-CB839E9FA440}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD368FB8-528A-43E2-A7FD-CB839E9FA440}.Release|x64.ActiveCfg = Release|Any CPU
+		{FD368FB8-528A-43E2-A7FD-CB839E9FA440}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
