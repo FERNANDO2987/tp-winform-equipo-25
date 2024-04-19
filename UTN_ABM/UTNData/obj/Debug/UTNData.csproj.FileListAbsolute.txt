@@ -14,3 +14,25 @@ C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\UTN
 C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\UTN_ABM\UTN_ABM\UTN_ABM\UTN_ABM\UTNData\obj\Debug\UTNData.csproj.Up2Date
 C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\UTN_ABM\UTN_ABM\UTN_ABM\UTN_ABM\UTNData\obj\Debug\UTNData.dll
 C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\UTN_ABM\UTN_ABM\UTN_ABM\UTN_ABM\UTNData\obj\Debug\UTNData.pdb
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNData\bin\Debug\UTNData.dll.config
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNData\bin\Debug\UTNData.dll
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNData\bin\Debug\UTNData.pdb
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNData\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNData\bin\Debug\Microsoft.Extensions.Primitives.dll
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNData\bin\Debug\System.Buffers.dll
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNData\bin\Debug\System.Memory.dll
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNData\bin\Debug\System.Numerics.Vectors.dll
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNData\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNData\bin\Debug\System.ValueTuple.dll
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNData\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNData\bin\Debug\Microsoft.Extensions.Primitives.xml
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNData\bin\Debug\System.Buffers.xml
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNData\bin\Debug\System.Memory.xml
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNData\bin\Debug\System.Numerics.Vectors.xml
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNData\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNData\bin\Debug\System.ValueTuple.xml
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNData\obj\Debug\UTNData.csproj.AssemblyReference.cache
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNData\obj\Debug\UTNData.csproj.CoreCompileInputs.cache
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNData\obj\Debug\UTNData.csproj.Up2Date
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNData\obj\Debug\UTNData.dll
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNData\obj\Debug\UTNData.pdb

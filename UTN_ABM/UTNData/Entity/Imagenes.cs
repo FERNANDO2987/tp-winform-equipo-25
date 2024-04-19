@@ -9,9 +9,9 @@ namespace UTNData.Entity
 {
     public class Imagenes
     {
-        public int id{ get; set; }
-        public int idArticulo{ get; set; }
-        public string imagenURL{ get; set; }
+        public int Id{ get; set; }
+        public int IdArticulo{ get; set; }
+        public string ImagenURL{ get; set; }
 
 
 
