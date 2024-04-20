@@ -1,0 +1,9 @@
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP2 Winforms\UTN_ABM\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\UTNFormsApP.exe.config
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP2 Winforms\UTN_ABM\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\UTNFormsApP.exe
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP2 Winforms\UTN_ABM\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\UTNFormsApP.pdb
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP2 Winforms\UTN_ABM\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.csproj.AssemblyReference.cache
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP2 Winforms\UTN_ABM\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.Properties.Resources.resources
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP2 Winforms\UTN_ABM\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.csproj.GenerateResource.cache
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP2 Winforms\UTN_ABM\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.csproj.CoreCompileInputs.cache
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP2 Winforms\UTN_ABM\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.exe
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP2 Winforms\UTN_ABM\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.pdb
