@@ -13,7 +13,7 @@ namespace UTNBusiness.Interfaces
         Task<List<Articulos>> ObtenerArticulos(int idArticulo);
         Task<Articulos> AgregarArticulos(Articulos articulos);
         Task<Articulos> ModificarArticulos(Articulos articulos);
-        Task<Articulos> EliminarArticulos(int id);
+        Task<bool> EliminarArticulos(int id);
 
     }
 }

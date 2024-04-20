@@ -15,6 +15,7 @@ namespace UTNBusiness.Module
 {
     public class ArticulosModule : IArticulosModule
     {
+
         private readonly string sqlconString;
         private readonly IConfiguration _configuration;
 
@@ -30,13 +31,50 @@ namespace UTNBusiness.Module
             throw new NotImplementedException();
         }
 
-        public Task<Articulos> EliminarArticulos(int id)
+        public async Task<bool> EliminarArticulos(int id)
         {
-            throw new NotImplementedException();
+            try
+            {
+         
+
+            // Crea una nueva conexion a la base de datos utilizando la cadena de conexion sqlconString.
+            using var conn = new SqlConnection(sqlconString);
+
+            // Crea un nuevo comando SQL para ejecutar el procedimiento almacenado ObtenerArticulos.
+            using SqlCommand command = new SqlCommand("EliminarArticulo", conn)
+            {
+                // Establece el tipo de comando como procedimiento almacenado.
+                CommandType = System.Data.CommandType.StoredProcedure
+            };
+
+            // Agrega un parometro al comando SQL para pasar el ID de los artoculos.
+            command.Parameters.Add(new SqlParameter("@idArticulos", id));
+
+
+            // Abre la conexion a la base de datos.
+            conn.Open();
+
+
+            int FilasAfectadas = command.ExecuteNonQuery();
+
+                // verifica si se elimino al menos una fila de la base de datos.
+                return FilasAfectadas > 0;
+                
+            }
+            catch (Exception ex)
+            {
+                // Captura cualquier excepcion que ocurra durante el proceso de lectura de datos.
+                var error = "Error parseando datos de SQL: " + ex.Message;
+
+                // devuelve falso en caso de error al eliminar
+                return false;
+            }
+          
         }
 
         public Task<Articulos> ModificarArticulos(Articulos articulos)
         {
+            // falta hacer
             throw new NotImplementedException();
         }
 
