@@ -21,7 +21,7 @@ namespace UTNBusiness.Module
         public ArticulosModule(IConfiguration configuration)
         {
             _configuration = configuration;
-            sqlconString = _configuration["ConnectionStrings:"];
+            sqlconString = _configuration["ConnectionString:UTNString"];
         }
 
         public Task<Articulos> AgregarArticulos(Articulos articulos)
@@ -44,7 +44,7 @@ namespace UTNBusiness.Module
             // Crea una nueva lista para almacenar los objetos Articulos.
             var lista = new List<Articulos>();
 
-            // Crea una nueva conexión a la base de datos utilizando la cadena de conexión sqlconString.
+            // Crea una nueva conexion a la base de datos utilizando la cadena de conexion sqlconString.
             using var conn = new SqlConnection(sqlconString);
 
             // Crea un nuevo comando SQL para ejecutar el procedimiento almacenado ObtenerArticulos.
@@ -54,10 +54,10 @@ namespace UTNBusiness.Module
                 CommandType = System.Data.CommandType.StoredProcedure
             };
 
-            // Abre la conexión a la base de datos.
+            // Abre la conexion a la base de datos.
             conn.Open();
 
-            // Agrega un parámetro al comando SQL para pasar el ID de los artículos.
+            // Agrega un parometro al comando SQL para pasar el ID de los artoculos.
             command.Parameters.Add(new SqlParameter("@idArticulos", id));
 
             // Ejecuta y lee los resultados de la consulta SQL
@@ -65,23 +65,23 @@ namespace UTNBusiness.Module
 
             try
             {
-                // Itera a través de cada fila devuelta por el lector de datos.
+                // Itera a traves de cada fila devuelta por el lector de datos.
                 while (reader.Read())
                 {
                     // Crea un nuevo objeto Articulos y lo agrega a la lista.
                     lista.Add(new Articulos
                     {
-                        // Asigna valores a las propiedades del objeto Articulos utilizando los datos leídos.
+                        // Asigna valores a las propiedades del objeto Articulos utilizando los datos leidos.
                         Id = reader.GetInt32(0),
                         Codigo = reader.GetString(1),
                         Nombre = reader.GetString(2),
                         Descripcion = reader.GetString(3),
-                        // Crea un nuevo objeto Marca y asigna el ID leído.
+                        // Crea un nuevo objeto Marca y asigna el ID leido.
                         Marca = new Marca()
                         {
                             Id = reader.GetInt32(4)
                         },
-                        // Crea un nuevo objeto Categoria y asigna el ID leído.
+                        // Crea un nuevo objeto Categoria y asigna el ID leido.
                         Categoria = new Categoria()
                         {
                             Id = reader.GetInt32(5)
@@ -93,10 +93,10 @@ namespace UTNBusiness.Module
             }
             catch (Exception ex)
             {
-                // Captura cualquier excepción que ocurra durante el proceso de lectura de datos.
+                // Captura cualquier excepcion que ocurra durante el proceso de lectura de datos.
                 var error = "Error parseando datos de SQL: " + ex.Message;
 
-                // Devuelve una nueva lista vacía de objetos Articulos.
+                // Devuelve una nueva lista vacia de objetos Articulos.
                 return new List<Articulos>();
             }
             finally
@@ -105,11 +105,11 @@ namespace UTNBusiness.Module
                 reader.Close();
                 // Libera los recursos asociados con el comando SQL.
                 command.Dispose();
-                // Cierra la conexión a la base de datos para liberar recursos y finalizar la conexión.
+                // Cierra la conexion a la base de datos para liberar recursos y finalizar la conexion.
                 conn.Close();
             }
 
-            // Devuelve la lista de objetos Articulos que se han leído de la base de datos.
+            // Devuelve la lista de objetos Articulos que se han leido de la base de datos.
             return lista;
         }
 
