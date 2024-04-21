@@ -22,7 +22,12 @@ namespace UTNBusiness.Module
         public ArticulosModule(IConfiguration configuration)
         {
             _configuration = configuration;
-            sqlconString = _configuration["ConnectionString:UTNString"];
+            sqlconString = _configuration["ConnectionStringUTN"];
+        }
+
+        public ArticulosModule(string sqlconString)
+        {
+            this.sqlconString = sqlconString;
         }
 
         public Task<Articulos> AgregarArticulos(Articulos articulos)

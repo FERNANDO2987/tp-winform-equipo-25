@@ -5,7 +5,7 @@ VisualStudioVersion = 17.10.34607.79
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UTNBusiness", "UTNBusiness\UTNBusiness.csproj", "{42D433D1-49F4-423A-ADE7-C589A57FE38E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UTNFormsApP", "UTNFormsApP\UTNFormsApP.csproj", "{FD368FB8-528A-43E2-A7FD-CB839E9FA440}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UTNFormsApp", "UTNFormsApP\UTNFormsApp.csproj", "{FD368FB8-528A-43E2-A7FD-CB839E9FA440}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

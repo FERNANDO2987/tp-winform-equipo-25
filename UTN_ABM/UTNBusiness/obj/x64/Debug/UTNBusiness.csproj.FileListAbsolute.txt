@@ -16,3 +16,23 @@ C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP2
 C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP2 Winforms\UTN_ABM\UTN_ABM\UTN_ABM\UTNBusiness\obj\x64\Debug\UTNBusin.DC20B92A.Up2Date
 C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP2 Winforms\UTN_ABM\UTN_ABM\UTN_ABM\UTNBusiness\obj\x64\Debug\UTNBusiness.dll
 C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP2 Winforms\UTN_ABM\UTN_ABM\UTN_ABM\UTNBusiness\obj\x64\Debug\UTNBusiness.pdb
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\bin\x64\Debug\UTNBusiness.dll.config
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\bin\x64\Debug\UTNBusiness.dll
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\bin\x64\Debug\UTNBusiness.pdb
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\bin\x64\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\bin\x64\Debug\Microsoft.Extensions.Primitives.dll
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\bin\x64\Debug\System.Buffers.dll
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\bin\x64\Debug\System.Memory.dll
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\bin\x64\Debug\System.Numerics.Vectors.dll
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\bin\x64\Debug\System.ValueTuple.dll
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\bin\x64\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\bin\x64\Debug\Microsoft.Extensions.Primitives.xml
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\bin\x64\Debug\System.Buffers.xml
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\bin\x64\Debug\System.Memory.xml
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\bin\x64\Debug\System.Numerics.Vectors.xml
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\bin\x64\Debug\System.ValueTuple.xml
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\obj\x64\Debug\UTNBusin.DC20B92A.Up2Date
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\obj\x64\Debug\UTNBusiness.dll
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\obj\x64\Debug\UTNBusiness.pdb
