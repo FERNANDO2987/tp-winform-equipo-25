@@ -35,7 +35,7 @@
             // 
             this.label_Buscar.AutoSize = true;
             this.label_Buscar.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Buscar.Location = new System.Drawing.Point(192, 24);
+            this.label_Buscar.Location = new System.Drawing.Point(192, 36);
             this.label_Buscar.Name = "label_Buscar";
             this.label_Buscar.Size = new System.Drawing.Size(245, 39);
             this.label_Buscar.TabIndex = 3;

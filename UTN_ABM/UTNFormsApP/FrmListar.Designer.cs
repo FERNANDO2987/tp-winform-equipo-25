@@ -35,7 +35,7 @@
             // 
             this.label_Listar.AutoSize = true;
             this.label_Listar.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Listar.Location = new System.Drawing.Point(172, 26);
+            this.label_Listar.Location = new System.Drawing.Point(198, 34);
             this.label_Listar.Name = "label_Listar";
             this.label_Listar.Size = new System.Drawing.Size(231, 39);
             this.label_Listar.TabIndex = 4;

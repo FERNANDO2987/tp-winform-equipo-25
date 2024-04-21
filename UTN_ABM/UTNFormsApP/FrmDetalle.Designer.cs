@@ -35,7 +35,7 @@
             // 
             this.label_Detalle.AutoSize = true;
             this.label_Detalle.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Detalle.Location = new System.Drawing.Point(161, 28);
+            this.label_Detalle.Location = new System.Drawing.Point(197, 35);
             this.label_Detalle.Name = "label_Detalle";
             this.label_Detalle.Size = new System.Drawing.Size(253, 39);
             this.label_Detalle.TabIndex = 3;

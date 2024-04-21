@@ -39,6 +39,7 @@
             this.btnInicio = new System.Windows.Forms.Button();
             this.panelMargen = new System.Windows.Forms.Panel();
             this.panelContenedor = new System.Windows.Forms.Panel();
+            this.panelMovimiento = new System.Windows.Forms.Panel();
             this.panelLateral.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -189,11 +190,22 @@
             this.panelContenedor.Size = new System.Drawing.Size(659, 510);
             this.panelContenedor.TabIndex = 1;
             // 
+            // panelMovimiento
+            // 
+            this.panelMovimiento.BackColor = System.Drawing.Color.Navy;
+            this.panelMovimiento.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelMovimiento.Location = new System.Drawing.Point(242, 0);
+            this.panelMovimiento.Name = "panelMovimiento";
+            this.panelMovimiento.Size = new System.Drawing.Size(659, 30);
+            this.panelMovimiento.TabIndex = 0;
+            this.panelMovimiento.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMovimiento_Paint);
+            // 
             // FrmApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(901, 510);
+            this.Controls.Add(this.panelMovimiento);
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.panelLateral);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -218,6 +230,7 @@
         private System.Windows.Forms.Button btn_Agregar;
         private System.Windows.Forms.Button btn_Buscar;
         private System.Windows.Forms.Button btn_Salir;
+        private System.Windows.Forms.Panel panelMovimiento;
     }
 }
 

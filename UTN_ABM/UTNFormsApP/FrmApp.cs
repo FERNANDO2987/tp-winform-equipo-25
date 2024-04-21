@@ -171,6 +171,36 @@ namespace UTNFormsApP
             formularioInicio.Show();
 
         }
+        private bool mouseDown;
+        private Point lastLocation;
+        private void panelMovimiento_Paint(object sender, PaintEventArgs e)
+        {
+            panelMovimiento.MouseMove += PanelMovimiento_MouseMove;
+            panelMovimiento.MouseDown += PanelMovimiento_MouseDown;
+            panelMovimiento.MouseUp += PanelMovimiento_MouseUp;
+        }
+
+        private void PanelMovimiento_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDown = true;
+            lastLocation = e.Location;
+        }
+
+        private void PanelMovimiento_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mouseDown)
+            {
+                this.Location = new Point(
+                    (this.Location.X - lastLocation.X) + e.X, (this.Location.Y - lastLocation.Y) + e.Y);
+
+                this.Update();
+            }
+        }
+
+        private void PanelMovimiento_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseDown = false;
+        }
     }
 }
 

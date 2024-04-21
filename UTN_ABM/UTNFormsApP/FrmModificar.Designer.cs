@@ -35,7 +35,7 @@
             // 
             this.label_Modificar.AutoSize = true;
             this.label_Modificar.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Modificar.Location = new System.Drawing.Point(195, 25);
+            this.label_Modificar.Location = new System.Drawing.Point(172, 35);
             this.label_Modificar.Name = "label_Modificar";
             this.label_Modificar.Size = new System.Drawing.Size(292, 39);
             this.label_Modificar.TabIndex = 1;

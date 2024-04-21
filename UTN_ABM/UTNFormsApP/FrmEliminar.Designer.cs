@@ -35,7 +35,7 @@
             // 
             this.label_Eliminar.AutoSize = true;
             this.label_Eliminar.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Eliminar.Location = new System.Drawing.Point(157, 23);
+            this.label_Eliminar.Location = new System.Drawing.Point(179, 36);
             this.label_Eliminar.Name = "label_Eliminar";
             this.label_Eliminar.Size = new System.Drawing.Size(262, 39);
             this.label_Eliminar.TabIndex = 2;
