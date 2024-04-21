@@ -40,7 +40,9 @@
             this.panelMargen = new System.Windows.Forms.Panel();
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.panelMovimiento = new System.Windows.Forms.Panel();
+            this.txtButon = new System.Windows.Forms.TextBox();
             this.panelLateral.SuspendLayout();
+            this.panelMovimiento.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelLateral
@@ -193,12 +195,22 @@
             // panelMovimiento
             // 
             this.panelMovimiento.BackColor = System.Drawing.Color.Navy;
+            this.panelMovimiento.Controls.Add(this.txtButon);
             this.panelMovimiento.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelMovimiento.Location = new System.Drawing.Point(242, 0);
             this.panelMovimiento.Name = "panelMovimiento";
             this.panelMovimiento.Size = new System.Drawing.Size(659, 30);
             this.panelMovimiento.TabIndex = 0;
             this.panelMovimiento.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMovimiento_Paint);
+            // 
+            // txtButon
+            // 
+            this.txtButon.Location = new System.Drawing.Point(179, 3);
+            this.txtButon.Name = "txtButon";
+            this.txtButon.Size = new System.Drawing.Size(305, 20);
+            this.txtButon.TabIndex = 0;
+            this.txtButon.Text = "GESTION DE PRODUCTOS";
+            this.txtButon.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // FrmApp
             // 
@@ -214,6 +226,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AppABM";
             this.panelLateral.ResumeLayout(false);
+            this.panelMovimiento.ResumeLayout(false);
+            this.panelMovimiento.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -232,6 +246,7 @@
         private System.Windows.Forms.Button btn_Buscar;
         private System.Windows.Forms.Button btn_Salir;
         private System.Windows.Forms.Panel panelMovimiento;
+        private System.Windows.Forms.TextBox txtButon;
     }
 }
 

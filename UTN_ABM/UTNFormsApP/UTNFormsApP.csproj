@@ -197,6 +197,7 @@
     <Compile Include="FrmModificar.Designer.cs">
       <DependentUpon>FrmModificar.cs</DependentUpon>
     </Compile>
+    <Compile Include="IArticulosModule.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmAgregar.resx">

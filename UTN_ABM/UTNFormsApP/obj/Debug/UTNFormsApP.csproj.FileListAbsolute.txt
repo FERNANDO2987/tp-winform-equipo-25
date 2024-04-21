@@ -98,3 +98,45 @@ D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmDetalle.resou
 D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmEliminar.resources
 D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmListar.resources
 D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmInicio.resources
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApp.csproj.AssemblyReference.cache
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmAgregar.resources
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmApp.resources
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmBuscar.resources
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmDetalle.resources
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmEliminar.resources
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmInicio.resources
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmListar.resources
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmModificar.resources
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.Properties.Resources.resources
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApp.csproj.GenerateResource.cache
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApp.csproj.CoreCompileInputs.cache
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.exe
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\UTNFormsApP.exe.config
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\UTNFormsApP.exe
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\UTNFormsApP.pdb
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\Antlr3.Runtime.dll
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\Enums.NET.dll
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\NHibernate.dll
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\SixLabors.Fonts.dll
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\System.Buffers.dll
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\System.Memory.dll
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\System.Security.AccessControl.dll
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\System.Security.Cryptography.Xml.dll
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\System.ValueTuple.dll
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\UTNBusiness.dll
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\UTNBusiness.pdb
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\UTNBusiness.dll.config
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\Antlr3.Runtime.xml
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\Enums.NET.pdb
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\Enums.NET.xml
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\NHibernate.xml
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\SixLabors.Fonts.xml
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\System.Buffers.xml
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\System.Security.Cryptography.Xml.xml
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNForms.B91D8A35.Up2Date
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.pdb

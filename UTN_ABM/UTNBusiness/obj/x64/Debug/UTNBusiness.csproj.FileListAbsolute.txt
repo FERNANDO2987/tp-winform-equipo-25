@@ -36,3 +36,19 @@ D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\bin\x64\Debug\System.ValueTuple.xml
 D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\obj\x64\Debug\UTNBusin.DC20B92A.Up2Date
 D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\obj\x64\Debug\UTNBusiness.dll
 D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\obj\x64\Debug\UTNBusiness.pdb
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNBusiness\bin\x64\Debug\UTNBusiness.dll.config
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNBusiness\bin\x64\Debug\UTNBusiness.dll
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNBusiness\bin\x64\Debug\UTNBusiness.pdb
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNBusiness\bin\x64\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNBusiness\bin\x64\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNBusiness\bin\x64\Debug\System.Buffers.dll
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNBusiness\bin\x64\Debug\System.Memory.dll
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNBusiness\bin\x64\Debug\System.Numerics.Vectors.dll
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNBusiness\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNBusiness\bin\x64\Debug\System.ValueTuple.dll
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNBusiness\bin\x64\Debug\System.Buffers.xml
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNBusiness\obj\x64\Debug\UTNBusiness.csproj.AssemblyReference.cache
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNBusiness\obj\x64\Debug\UTNBusiness.csproj.CoreCompileInputs.cache
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNBusiness\obj\x64\Debug\UTNBusin.DC20B92A.Up2Date
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNBusiness\obj\x64\Debug\UTNBusiness.dll
+C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNBusiness\obj\x64\Debug\UTNBusiness.pdb

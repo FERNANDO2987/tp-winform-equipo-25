@@ -1,16 +1,7 @@
-﻿using NPOI.SS.Formula.Functions;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using System;
 using System.Configuration;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using UTNBusiness.Interfaces;
-using UTNBusiness.Module;
 namespace UTNFormsApP
 {
     public partial class FrmApp : Form
