@@ -29,8 +29,15 @@ namespace UTNFormsApP
         //Cerrar Ventana
         private void btn_Salir_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult resultado = MessageBox.Show("¿Estás seguro que deseas salir?", "Confirmar salida", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (resultado == DialogResult.Yes)
+            {
+                this.Close(); // Cierra la ventana si el usuario elige "Sí" en el cuadro de diálogo de confirmación.
+            }
+            // Si el usuario elige "No", la ventana permanecerá abierta.
         }
+
 
 
         private void btn_Agregar_Click(object sender, EventArgs e)
