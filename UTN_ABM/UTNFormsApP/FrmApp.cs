@@ -17,6 +17,8 @@ namespace UTNFormsApP
     {
         private readonly IArticulosModule _articulosModule;
         private readonly string _sqlconString;
+        private bool mouseDown;
+        private Point lastLocation;
         public FrmApp()
         {
             InitializeComponent();
@@ -171,8 +173,7 @@ namespace UTNFormsApP
             formularioInicio.Show();
 
         }
-        private bool mouseDown;
-        private Point lastLocation;
+    
         private void panelMovimiento_Paint(object sender, PaintEventArgs e)
         {
             panelMovimiento.MouseMove += PanelMovimiento_MouseMove;
