@@ -60,6 +60,7 @@
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
@@ -83,11 +84,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interfaces\IArticulosModule.cs" />
+    <Compile Include="Interfaces\ICategoriaModule.cs" />
+    <Compile Include="Interfaces\IImagenesModule.cs" />
+    <Compile Include="Interfaces\IMarcasModule.cs" />
     <Compile Include="Models\Articulos.cs" />
     <Compile Include="Models\Categoria.cs" />
     <Compile Include="Models\Imagenes.cs" />
     <Compile Include="Models\Marca.cs" />
     <Compile Include="Module\ArticulosModule.cs" />
+    <Compile Include="Module\CategoriaModule.cs" />
+    <Compile Include="Module\ImagenesModule.cs" />
+    <Compile Include="Module\MarcasModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>

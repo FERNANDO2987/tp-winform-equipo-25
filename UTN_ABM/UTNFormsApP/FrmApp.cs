@@ -1,25 +1,29 @@
-﻿using System;
+﻿using Microsoft.Extensions.Configuration;
+using System;
 using System.Configuration;
 using System.Drawing;
 using System.Windows.Forms;
+using UTNBusiness.Interfaces;
+using UTNBusiness.Module;
 namespace UTNFormsApP
 {
     public partial class FrmApp : Form
     {
         private readonly IArticulosModule _articulosModule;
-        private readonly string _sqlconString;
+        private readonly IMarcasModule _marcasModule; 
+     
+
         private bool mouseDown;
         private Point lastLocation;
         public FrmApp()
         {
             InitializeComponent();
+   
 
-            // Cargar la cadena de conexión desde el archivo de configuración
-            _sqlconString = ConfigurationManager.AppSettings["ConnectionStringUTN"];
 
-            // Inicializa el módulo de artículos con la cadena de conexión
-            // _articulosModule = new ArticulosModule(_sqlconString);
         }
+
+    
 
 
 
@@ -40,22 +44,23 @@ namespace UTNFormsApP
 
 
 
-        private void btn_Agregar_Click(object sender, EventArgs e)
+        private async void btn_Agregar_Click(object sender, EventArgs e)
         {
-            // Crear una instancia del formulario que deseas agregar
-            FrmAgregar formularioAgregarArticulo = new FrmAgregar();
+
+          
+            FrmAgregar frmAgregar = new FrmAgregar();
 
             // Establecer TopLevel en false para que se pueda agregar al panelContenedor
-            formularioAgregarArticulo.TopLevel = false;
+            frmAgregar.TopLevel = false;
 
             // Limpiar los controles existentes en el panelContenedor
             panelContenedor.Controls.Clear();
 
             // Agregar el formulario al panelContenedor
-            panelContenedor.Controls.Add(formularioAgregarArticulo);
+            panelContenedor.Controls.Add(frmAgregar);
 
             // Mostrar el formulario en el panelContenedor
-            formularioAgregarArticulo.Show();
+            frmAgregar.Show();
         }
 
         private void btn_Modificar_Click(object sender, EventArgs e)

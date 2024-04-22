@@ -154,6 +154,7 @@
             this.cbox_Marca.Name = "cbox_Marca";
             this.cbox_Marca.Size = new System.Drawing.Size(295, 21);
             this.cbox_Marca.TabIndex = 11;
+            this.cbox_Marca.SelectedIndexChanged += new System.EventHandler(this.cbox_Marca_SelectedIndexChanged);
             // 
             // cbox_Categoria
             // 
@@ -182,6 +183,7 @@
             this.btn_Guardar.TabIndex = 14;
             this.btn_Guardar.Text = "Guardar";
             this.btn_Guardar.UseVisualStyleBackColor = false;
+            this.btn_Guardar.Click += new System.EventHandler(this.btn_Guardar_Click);
             // 
             // btn_Cancelar
             // 
