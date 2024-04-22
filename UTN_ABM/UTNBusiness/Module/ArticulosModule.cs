@@ -30,10 +30,48 @@ namespace UTNBusiness.Module
             this.sqlconString = sqlconString;
         }
 
-        public Task<Articulos> AgregarArticulos(Articulos articulos)
+        public async Task<Articulos> AgregarArticulos(Articulos articulos)
         {
-            //Falta hacer
-            throw new NotImplementedException();
+
+            var conn = new SqlConnection(sqlconString);
+
+          SqlCommand command = new SqlCommand("AgregarArticulo", conn)
+            {
+                CommandType = System.Data.CommandType.StoredProcedure
+            };
+            conn.Open();
+     
+
+            try
+            {
+                command.Parameters.Add(new SqlParameter("@Id", articulos.Id));
+                command.Parameters.Add(new SqlParameter("@Codigo", articulos.Codigo));
+                command.Parameters.Add(new SqlParameter("@Nombre", articulos.Nombre));
+                command.Parameters.Add(new SqlParameter("@Descripcion", articulos.Descripcion));
+                command.Parameters.Add(new SqlParameter("@IdMarca", articulos.IdMarca));
+                command.Parameters.Add(new SqlParameter("@IdCategoria", articulos.IdCategoria));
+                command.Parameters.Add(new SqlParameter("@Precio", articulos.Precio));
+
+                await command.ExecuteNonQueryAsync();
+
+            }
+
+            catch (Exception ex)
+            {
+                var error = "Error parseando datos de sql: " + ex.Message;
+                return null;
+
+            }
+            finally
+            {
+               
+                conn.Close();
+
+
+            }
+
+
+            return articulos;
         }
 
         public async Task<bool> EliminarArticulos(int id)
@@ -43,10 +81,10 @@ namespace UTNBusiness.Module
          
 
             // Crea una nueva conexion a la base de datos utilizando la cadena de conexion sqlconString.
-            using var conn = new SqlConnection(sqlconString);
+             var conn = new SqlConnection(sqlconString);
 
             // Crea un nuevo comando SQL para ejecutar el procedimiento almacenado ObtenerArticulos.
-            using SqlCommand command = new SqlCommand("EliminarArticulo", conn)
+             SqlCommand command = new SqlCommand("EliminarArticulo", conn)
             {
                 // Establece el tipo de comando como procedimiento almacenado.
                 CommandType = System.Data.CommandType.StoredProcedure
@@ -89,10 +127,10 @@ namespace UTNBusiness.Module
             var lista = new List<Articulos>();
 
             // Crea una nueva conexion a la base de datos utilizando la cadena de conexion sqlconString.
-            using var conn = new SqlConnection(sqlconString);
+            var conn = new SqlConnection(sqlconString);
 
             // Crea un nuevo comando SQL para ejecutar el procedimiento almacenado ObtenerArticulos.
-            using SqlCommand command = new SqlCommand("ObtenerArticulos", conn)
+            SqlCommand command = new SqlCommand("ObtenerArticulos", conn)
             {
                 // Establece el tipo de comando como procedimiento almacenado.
                 CommandType = System.Data.CommandType.StoredProcedure
@@ -120,17 +158,8 @@ namespace UTNBusiness.Module
                         Codigo = reader.GetString(1),
                         Nombre = reader.GetString(2),
                         Descripcion = reader.GetString(3),
-                        // Crea un nuevo objeto Marca y asigna el ID leido.
-                        Marca = new Marca()
-                        {
-                            Id = reader.GetInt32(4)
-                        },
-                        // Crea un nuevo objeto Categoria y asigna el ID leido.
-                        Categoria = new Categoria()
-                        {
-                            Id = reader.GetInt32(5)
-                        },
-                        // Asigna el precio.
+                        IdMarca = reader.GetInt32(4),
+                        IdCategoria = reader.GetInt32(5),  
                         Precio = reader.GetDecimal(6)
                     });
                 }
