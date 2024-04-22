@@ -19,12 +19,14 @@ namespace UTNBusiness.Module
         private readonly string sqlconString;
         private readonly IConfiguration _configuration;
 
+        // Constructor de la clase ArticulosModule que recibe un parametro de configuracion.
         public ArticulosModule(IConfiguration configuration)
         {
             _configuration = configuration;
             sqlconString = _configuration["ConnectionStringUTN"];
         }
 
+        // Constructor de la clase ArticulosModule que recibe un parametro de cadena de conexion.
         public ArticulosModule(string sqlconString)
         {
             this.sqlconString = sqlconString;

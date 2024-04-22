@@ -5,10 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using UTNBusiness.Models;
 
+
+
 namespace UTNBusiness.Interfaces
 {
      public interface IImagenesModule
     {
         Task<Imagenes> ObtenerImagen(int idImagen);
+
     }
 }
