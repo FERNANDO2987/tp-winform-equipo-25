@@ -100,5 +100,17 @@ namespace UTNFormsApP
 
 
         }
+
+        private void btn_Selecionar_Click(object sender, EventArgs e)
+        {
+
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Imagenes|*.jpg; *.png";
+            openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            openFileDialog.Title = "Seleccionar imagen";
+
+            if(openFileDialog.ShowDialog() == DialogResult.OK)
+            { pbImagen.Image = Image.FromFile(openFileDialog.FileName); }
+        }
     }
 }
