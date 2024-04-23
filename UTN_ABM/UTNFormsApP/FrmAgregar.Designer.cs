@@ -45,8 +45,8 @@
             this.btn_Cancelar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.pbImagen = new System.Windows.Forms.PictureBox();
             this.btn_Selecionar = new System.Windows.Forms.Button();
+            this.pbImagen = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).BeginInit();
@@ -227,14 +227,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Imagen";
             // 
-            // pbImagen
-            // 
-            this.pbImagen.Location = new System.Drawing.Point(6, 30);
-            this.pbImagen.Name = "pbImagen";
-            this.pbImagen.Size = new System.Drawing.Size(270, 197);
-            this.pbImagen.TabIndex = 0;
-            this.pbImagen.TabStop = false;
-            // 
             // btn_Selecionar
             // 
             this.btn_Selecionar.BackColor = System.Drawing.SystemColors.InactiveCaption;
@@ -248,6 +240,14 @@
             this.btn_Selecionar.Text = "Selecionar Imagen";
             this.btn_Selecionar.UseVisualStyleBackColor = false;
             this.btn_Selecionar.Click += new System.EventHandler(this.btn_Selecionar_Click);
+            // 
+            // pbImagen
+            // 
+            this.pbImagen.Location = new System.Drawing.Point(6, 30);
+            this.pbImagen.Name = "pbImagen";
+            this.pbImagen.Size = new System.Drawing.Size(270, 197);
+            this.pbImagen.TabIndex = 0;
+            this.pbImagen.TabStop = false;
             // 
             // FrmAgregar
             // 

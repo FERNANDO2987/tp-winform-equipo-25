@@ -122,9 +122,11 @@ namespace UTNFormsApP
 
         }
 
+
+
+            // Cerrar el formulario
         private void btn_Cancelar_Click(object sender, EventArgs e)
         {
-            // Cerrar el formulario
             this.Close();
         }
 
