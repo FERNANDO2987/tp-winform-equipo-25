@@ -81,6 +81,7 @@ namespace UTNFormsApP
 
         private void btn_Guardar_Click(object sender, EventArgs e)
         {
+
             // Obtener los valores de los campos
             int CodArticulo = int.Parse(text_CodArticulo.Text); // Convertir el valor a entero
             string descripcion = text_Descripcion.Text;
@@ -94,6 +95,11 @@ namespace UTNFormsApP
 
             // Crear un nuevo objeto de tipo Articulo
             Articulos articulo = new Articulos
+
+            
+
+            var articulo = new Articulos()
+          Interfaces y Formulario Buscar
             {
                 Descripcion = descripcion,
                 Precio = decimal.Parse(precio),
