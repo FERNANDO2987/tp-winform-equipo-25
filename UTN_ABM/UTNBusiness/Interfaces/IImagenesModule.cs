@@ -12,6 +12,7 @@ namespace UTNBusiness.Interfaces
      public interface IImagenesModule
     {
         Task<Imagenes> ObtenerImagen(int idImagen);
+        Task<Imagenes> GuardarImagen(string imagen);
 
     }
 }
