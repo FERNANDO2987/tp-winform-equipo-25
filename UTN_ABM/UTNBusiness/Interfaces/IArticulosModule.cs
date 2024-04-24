@@ -11,7 +11,7 @@ namespace UTNBusiness.Interfaces
      public interface IArticulosModule
     {
         Task<List<Articulos>> ObtenerArticulos(int idArticulo);
-        Task<Articulos> AgregarArticulos(Articulos articulos);
+        Task<Articulos> AgregarArticulos(Articulos obj);
         Task<Articulos> ModificarArticulos(Articulos articulos);
         Task<bool> EliminarArticulos(int id);
         Task<List<Articulos>> BuscarArticuloPorCriterio(string valorBusqueda);

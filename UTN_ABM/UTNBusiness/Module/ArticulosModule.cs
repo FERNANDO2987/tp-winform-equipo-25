@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 using UTNBusiness.Interfaces;
@@ -28,7 +29,7 @@ namespace UTNBusiness.Module
             sqlconString = connectionString;
         }
 
-        public async Task<Articulos> AgregarArticulos(Articulos articulos)
+        public async Task<Articulos> AgregarArticulos(Articulos obj)
         {
 
             var conn = new SqlConnection(sqlconString);
@@ -42,15 +43,45 @@ namespace UTNBusiness.Module
 
             try
             {
-                command.Parameters.Add(new SqlParameter("@Id", articulos.Id));
-                command.Parameters.Add(new SqlParameter("@Codigo", articulos.Codigo));
-                command.Parameters.Add(new SqlParameter("@Nombre", articulos.Nombre));
-                command.Parameters.Add(new SqlParameter("@Descripcion", articulos.Descripcion));
-                command.Parameters.Add(new SqlParameter("@IdMarca", articulos.IdMarca));
-                command.Parameters.Add(new SqlParameter("@IdCategoria", articulos.IdCategoria));
-                command.Parameters.Add(new SqlParameter("@Precio", articulos.Precio));
+                command.Parameters.Add(new SqlParameter("@Id", obj.Id));
+                command.Parameters.Add(new SqlParameter("@Codigo", obj.Codigo));
+                command.Parameters.Add(new SqlParameter("@Nombre", obj.Nombre));
+                command.Parameters.Add(new SqlParameter("@Descripcion", obj.Descripcion));
+                command.Parameters.Add(new SqlParameter("@IdMarca", obj.IdMarca));
+                command.Parameters.Add(new SqlParameter("@IdCategoria", obj.IdCategoria));
+                command.Parameters.Add(new SqlParameter("@Precio", obj.Precio));
 
-                await command.ExecuteNonQueryAsync();
+                var reader = command.ExecuteReader();
+
+
+                try
+                {
+                    while (reader.Read())
+                    {
+                        /// Validacion para Identity, devuelve el valor de las tres formas
+                        if (reader[0].GetType() == typeof(int))
+                        {
+                            obj.Id = reader.GetInt32(0);
+                        }
+                        else
+                        if (reader[0].GetType() == typeof(decimal))
+                        {
+                            obj.Id = (int)reader.GetDecimal(0);
+                        }
+                        else
+                        {
+                            obj.Id = (int)reader.GetInt64(0);
+
+                        }
+
+
+                    }
+                }
+                catch (Exception ex)
+                {
+                    var error = "Error parseando datos de sql: " + ex.Message;
+                    return null;
+                }
 
             }
 
@@ -69,7 +100,7 @@ namespace UTNBusiness.Module
             }
 
 
-            return articulos;
+            return obj;
         }
 
         public async Task<List<Articulos>> BuscarArticuloPorCriterio(string valorBusqueda)
