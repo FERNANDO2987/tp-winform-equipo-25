@@ -14,7 +14,7 @@ namespace UTNBusiness.Interfaces
         Task<Articulos> AgregarArticulos(Articulos articulos);
         Task<Articulos> ModificarArticulos(Articulos articulos);
         Task<bool> EliminarArticulos(int id);
-        Task<List<Articulos>> BuscarArticuloPorCriterio(string nombre);
+        Task<List<Articulos>> BuscarArticuloPorCriterio(string valorBusqueda);
 
     }
 }
