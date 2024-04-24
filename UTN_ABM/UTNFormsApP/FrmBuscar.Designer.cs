@@ -30,13 +30,13 @@
         {
             this.label_Buscar = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.btn_Buscar = new System.Windows.Forms.Button();
+            this.text_Buscar = new System.Windows.Forms.TextBox();
             this.Lista = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView_Buscar = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             this.Lista.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Buscar)).BeginInit();
             this.SuspendLayout();
             // 
             // label_Buscar
@@ -52,20 +52,13 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btn_Buscar);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.text_Buscar);
             this.groupBox1.Location = new System.Drawing.Point(12, 83);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(616, 66);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Buscar Articulo";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(18, 29);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(460, 20);
-            this.textBox1.TabIndex = 0;
             // 
             // btn_Buscar
             // 
@@ -79,10 +72,18 @@
             this.btn_Buscar.TabIndex = 16;
             this.btn_Buscar.Text = "Buscar";
             this.btn_Buscar.UseVisualStyleBackColor = false;
+            this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click);
+            // 
+            // text_Buscar
+            // 
+            this.text_Buscar.Location = new System.Drawing.Point(18, 29);
+            this.text_Buscar.Name = "text_Buscar";
+            this.text_Buscar.Size = new System.Drawing.Size(460, 20);
+            this.text_Buscar.TabIndex = 0;
             // 
             // Lista
             // 
-            this.Lista.Controls.Add(this.dataGridView1);
+            this.Lista.Controls.Add(this.dataGridView_Buscar);
             this.Lista.Location = new System.Drawing.Point(13, 171);
             this.Lista.Name = "Lista";
             this.Lista.Size = new System.Drawing.Size(615, 198);
@@ -90,16 +91,16 @@
             this.Lista.TabStop = false;
             this.Lista.Text = "Lista";
             // 
-            // dataGridView1
+            // dataGridView_Buscar
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(17, 20);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(580, 172);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridView_Buscar.AllowUserToAddRows = false;
+            this.dataGridView_Buscar.AllowUserToDeleteRows = false;
+            this.dataGridView_Buscar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_Buscar.Location = new System.Drawing.Point(17, 20);
+            this.dataGridView_Buscar.Name = "dataGridView_Buscar";
+            this.dataGridView_Buscar.ReadOnly = true;
+            this.dataGridView_Buscar.Size = new System.Drawing.Size(580, 172);
+            this.dataGridView_Buscar.TabIndex = 0;
             // 
             // FrmBuscar
             // 
@@ -115,7 +116,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.Lista.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Buscar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -125,9 +126,9 @@
 
         private System.Windows.Forms.Label label_Buscar;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox text_Buscar;
         private System.Windows.Forms.Button btn_Buscar;
         private System.Windows.Forms.GroupBox Lista;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView_Buscar;
     }
 }

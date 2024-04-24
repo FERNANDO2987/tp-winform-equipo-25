@@ -18,7 +18,7 @@ namespace UTNFormsApP
 {
     public partial class FrmAgregar : Form
     {
-        private readonly IArticulosModule _articulosModule;
+        
      
       
         public FrmAgregar()
@@ -26,8 +26,9 @@ namespace UTNFormsApP
             InitializeComponent();
 
 
-            
-          
+            InicializarSelectMarcas();
+            InicializarSelectCategorias();
+
         }
 
 
@@ -94,10 +95,10 @@ namespace UTNFormsApP
             int idCategoria = int.Parse(categoria.Split('-')[0].Trim()); // Obtener el ID de la marca seleccionada
 
             // Crear un nuevo objeto de tipo Articulo
-            Articulos articulo = new Articulos
+            /*Articulos articulo = new Articulos*/
 
             
-
+/*
             var articulo = new Articulos()
           Interfaces y Formulario Buscar
             {
@@ -105,12 +106,12 @@ namespace UTNFormsApP
                 Precio = decimal.Parse(precio),
                 IdMarca = idMarca,
                 IdCategoria = idCategoria
-            };
+            };*/
 
             // Guardar el nuevo artículo en la base de datos.
             // falta terminar de implementar. para fer
 
-            IArticulosModule.(articulo);
+            /*IArticulosModule.(articulo);*/
 
             // Mostrar un mensaje de éxito
             MessageBox.Show("Artículo agregado correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
