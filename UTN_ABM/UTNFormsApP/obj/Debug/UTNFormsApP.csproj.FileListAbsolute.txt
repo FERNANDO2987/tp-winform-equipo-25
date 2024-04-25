@@ -49,6 +49,19 @@ C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 
 C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\System.Security.Cryptography.Xml.xml
 C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNForms.B91D8A35.Up2Date
 C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.pdb
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApp.csproj.AssemblyReference.cache
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmAgregar.resources
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmApp.resources
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmBuscar.resources
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmDetalle.resources
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmEliminar.resources
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmInicio.resources
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmListar.resources
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmMenuPrincipal.resources
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmModificar.resources
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.Properties.Resources.resources
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApp.csproj.GenerateResource.cache
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApp.csproj.CoreCompileInputs.cache
 D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\UTNFormsApP.exe.config
 D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\UTNFormsApP.exe
 D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\UTNFormsApP.pdb
@@ -125,18 +138,6 @@ D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\System.Security.Cryptography
 D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\System.Security.Principal.Windows.xml
 D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\System.Text.Encoding.CodePages.xml
 D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\bin\Debug\System.ValueTuple.xml
-D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApp.csproj.AssemblyReference.cache
-D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmAgregar.resources
-D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmApp.resources
-D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmBuscar.resources
-D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmDetalle.resources
-D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmEliminar.resources
-D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmInicio.resources
-D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmListar.resources
-D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmModificar.resources
-D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.Properties.Resources.resources
-D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApp.csproj.GenerateResource.cache
-D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApp.csproj.CoreCompileInputs.cache
 D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNForms.B91D8A35.Up2Date
 D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.exe
 D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.pdb

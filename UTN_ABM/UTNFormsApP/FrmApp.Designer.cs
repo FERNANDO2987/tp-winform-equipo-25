@@ -45,7 +45,7 @@
             // 
             // panelLateral
             // 
-            this.panelLateral.BackColor = System.Drawing.Color.Navy;
+            this.panelLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.panelLateral.Controls.Add(this.btn_Salir);
             this.panelLateral.Controls.Add(this.btn_Buscar);
             this.panelLateral.Controls.Add(this.btn_Listar);
@@ -58,16 +58,18 @@
             this.panelLateral.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLateral.Location = new System.Drawing.Point(0, 0);
             this.panelLateral.Name = "panelLateral";
-            this.panelLateral.Size = new System.Drawing.Size(242, 510);
+            this.panelLateral.Size = new System.Drawing.Size(242, 600);
             this.panelLateral.TabIndex = 0;
             // 
             // btn_Salir
             // 
-            this.btn_Salir.BackColor = System.Drawing.Color.Gray;
+            this.btn_Salir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.btn_Salir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Salir.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btn_Salir.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Salir.FlatAppearance.BorderSize = 0;
+            this.btn_Salir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.IndianRed;
+            this.btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Salir.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Bold);
             this.btn_Salir.Location = new System.Drawing.Point(0, 363);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(242, 41);
@@ -78,11 +80,13 @@
             // 
             // btn_Buscar
             // 
-            this.btn_Buscar.BackColor = System.Drawing.Color.Gray;
+            this.btn_Buscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.btn_Buscar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Buscar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_Buscar.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btn_Buscar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Buscar.FlatAppearance.BorderSize = 0;
+            this.btn_Buscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.IndianRed;
+            this.btn_Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Buscar.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Bold);
             this.btn_Buscar.Location = new System.Drawing.Point(0, 322);
             this.btn_Buscar.Name = "btn_Buscar";
             this.btn_Buscar.Size = new System.Drawing.Size(242, 41);
@@ -93,11 +97,13 @@
             // 
             // btn_Listar
             // 
-            this.btn_Listar.BackColor = System.Drawing.Color.Gray;
+            this.btn_Listar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.btn_Listar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Listar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_Listar.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btn_Listar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Listar.FlatAppearance.BorderSize = 0;
+            this.btn_Listar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.IndianRed;
+            this.btn_Listar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Listar.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Bold);
             this.btn_Listar.Location = new System.Drawing.Point(0, 281);
             this.btn_Listar.Name = "btn_Listar";
             this.btn_Listar.Size = new System.Drawing.Size(242, 41);
@@ -108,11 +114,13 @@
             // 
             // btn_Detalle
             // 
-            this.btn_Detalle.BackColor = System.Drawing.Color.Gray;
+            this.btn_Detalle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.btn_Detalle.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Detalle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_Detalle.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btn_Detalle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Detalle.FlatAppearance.BorderSize = 0;
+            this.btn_Detalle.FlatAppearance.MouseOverBackColor = System.Drawing.Color.IndianRed;
+            this.btn_Detalle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Detalle.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Bold);
             this.btn_Detalle.Location = new System.Drawing.Point(0, 240);
             this.btn_Detalle.Name = "btn_Detalle";
             this.btn_Detalle.Size = new System.Drawing.Size(242, 41);
@@ -123,11 +131,13 @@
             // 
             // btn_Eliminar
             // 
-            this.btn_Eliminar.BackColor = System.Drawing.Color.Gray;
+            this.btn_Eliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.btn_Eliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Eliminar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_Eliminar.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btn_Eliminar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Eliminar.FlatAppearance.BorderSize = 0;
+            this.btn_Eliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.IndianRed;
+            this.btn_Eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Eliminar.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Bold);
             this.btn_Eliminar.Location = new System.Drawing.Point(0, 199);
             this.btn_Eliminar.Name = "btn_Eliminar";
             this.btn_Eliminar.Size = new System.Drawing.Size(242, 41);
@@ -138,11 +148,13 @@
             // 
             // btn_Modificar
             // 
-            this.btn_Modificar.BackColor = System.Drawing.Color.Gray;
+            this.btn_Modificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.btn_Modificar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Modificar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_Modificar.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btn_Modificar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Modificar.FlatAppearance.BorderSize = 0;
+            this.btn_Modificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.IndianRed;
+            this.btn_Modificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Modificar.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Bold);
             this.btn_Modificar.Location = new System.Drawing.Point(0, 158);
             this.btn_Modificar.Name = "btn_Modificar";
             this.btn_Modificar.Size = new System.Drawing.Size(242, 41);
@@ -153,11 +165,13 @@
             // 
             // btn_Agregar
             // 
-            this.btn_Agregar.BackColor = System.Drawing.Color.Gray;
+            this.btn_Agregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.btn_Agregar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Agregar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_Agregar.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btn_Agregar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Agregar.FlatAppearance.BorderSize = 0;
+            this.btn_Agregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.IndianRed;
+            this.btn_Agregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Agregar.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Bold);
             this.btn_Agregar.Location = new System.Drawing.Point(0, 117);
             this.btn_Agregar.Name = "btn_Agregar";
             this.btn_Agregar.Size = new System.Drawing.Size(242, 41);
@@ -168,11 +182,13 @@
             // 
             // btnInicio
             // 
-            this.btnInicio.BackColor = System.Drawing.Color.Gray;
+            this.btnInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.btnInicio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnInicio.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnInicio.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInicio.FlatAppearance.BorderSize = 0;
+            this.btnInicio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.IndianRed;
+            this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInicio.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Bold);
             this.btnInicio.Location = new System.Drawing.Point(0, 76);
             this.btnInicio.Name = "btnInicio";
             this.btnInicio.Size = new System.Drawing.Size(242, 41);
@@ -183,6 +199,7 @@
             // 
             // panelMargen
             // 
+            this.panelMargen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.panelMargen.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelMargen.Location = new System.Drawing.Point(0, 0);
             this.panelMargen.Name = "panelMargen";
@@ -191,21 +208,21 @@
             // 
             // panelContenedor
             // 
-            this.panelContenedor.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.panelContenedor.BackColor = System.Drawing.Color.LightGray;
             this.panelContenedor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(242, 0);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(659, 510);
+            this.panelContenedor.Size = new System.Drawing.Size(708, 600);
             this.panelContenedor.TabIndex = 1;
             // 
             // panelMovimiento
             // 
-            this.panelMovimiento.BackColor = System.Drawing.Color.Navy;
+            this.panelMovimiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.panelMovimiento.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelMovimiento.Location = new System.Drawing.Point(242, 0);
             this.panelMovimiento.Name = "panelMovimiento";
-            this.panelMovimiento.Size = new System.Drawing.Size(659, 30);
+            this.panelMovimiento.Size = new System.Drawing.Size(708, 30);
             this.panelMovimiento.TabIndex = 0;
             this.panelMovimiento.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMovimiento_Paint);
             // 
@@ -213,13 +230,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(901, 510);
+            this.ClientSize = new System.Drawing.Size(950, 600);
             this.Controls.Add(this.panelMovimiento);
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.panelLateral);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmApp";
-            this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AppABM";
             this.panelLateral.ResumeLayout(false);

@@ -18,13 +18,10 @@ namespace UTNFormsApP
         public FrmApp()
         {
             InitializeComponent();
-   
+     
 
-
+            
         }
-
-    
-
 
 
 
