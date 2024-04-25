@@ -34,7 +34,7 @@
             // label_Inicio
             // 
             this.label_Inicio.AutoSize = true;
-            this.label_Inicio.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label_Inicio.BackColor = System.Drawing.Color.LightGray;
             this.label_Inicio.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Inicio.Location = new System.Drawing.Point(150, 191);
             this.label_Inicio.Name = "label_Inicio";
@@ -47,8 +47,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(659, 510);
+            this.BackColor = System.Drawing.Color.LightGray;
+            this.ClientSize = new System.Drawing.Size(708, 600);
             this.Controls.Add(this.label_Inicio);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmInicio";
