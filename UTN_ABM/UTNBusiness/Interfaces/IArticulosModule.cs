@@ -18,5 +18,7 @@ namespace UTNBusiness.Interfaces
 
         Task<List<Articulos>> ListarArticulos();
 
+        Task<List<Detalle>> BuscarDetallePorArticulo(string criterio);
+
     }
 }
