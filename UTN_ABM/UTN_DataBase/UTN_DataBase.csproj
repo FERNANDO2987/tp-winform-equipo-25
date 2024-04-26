@@ -44,6 +44,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="SQL\SP_AgregarArticulo.sql" />
     <Content Include="SQL\SP_BuscarArticuloPorCriterio.sql" />
     <Content Include="SQL\SP_ObtenerArticulos.sql" />
     <Content Include="SQL\SP_ObtenerCategorias.sql" />
