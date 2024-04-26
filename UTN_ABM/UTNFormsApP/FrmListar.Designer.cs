@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.label_Listar = new System.Windows.Forms.Label();
+            this.dataGridView_Listar = new System.Windows.Forms.DataGridView();
+            this.Lista = new System.Windows.Forms.GroupBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Listar)).BeginInit();
+            this.Lista.SuspendLayout();
             this.SuspendLayout();
             // 
             // label_Listar
@@ -41,16 +45,41 @@
             this.label_Listar.TabIndex = 4;
             this.label_Listar.Text = "Listar Articulos";
             // 
+            // dataGridView_Listar
+            // 
+            this.dataGridView_Listar.AllowUserToAddRows = false;
+            this.dataGridView_Listar.AllowUserToDeleteRows = false;
+            this.dataGridView_Listar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_Listar.Location = new System.Drawing.Point(9, 19);
+            this.dataGridView_Listar.Name = "dataGridView_Listar";
+            this.dataGridView_Listar.ReadOnly = true;
+            this.dataGridView_Listar.Size = new System.Drawing.Size(580, 253);
+            this.dataGridView_Listar.TabIndex = 0;
+            this.dataGridView_Listar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_Listar_CellContentClick);
+            // 
+            // Lista
+            // 
+            this.Lista.Controls.Add(this.dataGridView_Listar);
+            this.Lista.Location = new System.Drawing.Point(40, 76);
+            this.Lista.Name = "Lista";
+            this.Lista.Size = new System.Drawing.Size(615, 278);
+            this.Lista.TabIndex = 7;
+            this.Lista.TabStop = false;
+            this.Lista.Text = "Lista";
+            // 
             // FrmListar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(708, 600);
+            this.Controls.Add(this.Lista);
             this.Controls.Add(this.label_Listar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmListar";
             this.Text = "FrmListar";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Listar)).EndInit();
+            this.Lista.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -59,5 +88,7 @@
         #endregion
 
         private System.Windows.Forms.Label label_Listar;
+        private System.Windows.Forms.DataGridView dataGridView_Listar;
+        private System.Windows.Forms.GroupBox Lista;
     }
 }

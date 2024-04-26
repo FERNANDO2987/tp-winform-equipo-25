@@ -208,6 +208,67 @@ namespace UTNBusiness.Module
           
         }
 
+        public async Task<List<Articulos>> ListarArticulos()
+        {
+            // Crea una nueva lista para almacenar los objetos Articulos.
+            var lista = new List<Articulos>();
+
+            // Crea una nueva conexion a la base de datos utilizando la cadena de conexion sqlconString.
+            var conn = new SqlConnection(sqlconString);
+
+            // Crea un nuevo comando SQL para ejecutar el procedimiento almacenado ObtenerArticulos.
+            SqlCommand command = new SqlCommand("ListarArticulos", conn)
+            {
+                // Establece el tipo de comando como procedimiento almacenado.
+                CommandType = System.Data.CommandType.StoredProcedure
+            };
+
+            // Abre la conexion a la base de datos.
+            conn.Open();
+
+            // Ejecuta y lee los resultados de la consulta SQL
+            var reader = command.ExecuteReader();
+
+            try
+            {
+                // Itera a traves de cada fila devuelta por el lector de datos.
+                while (reader.Read())
+                {
+                    lista.Add(new Articulos
+                    {
+                        // Asigna valores a las propiedades del objeto Articulos utilizando los datos leidos.
+                        Id = reader.GetInt32(0),
+                        Codigo = reader.GetString(1),
+                        Nombre = reader.GetString(2),
+                        Descripcion = reader.GetString(3),
+                        IdMarca = reader.GetInt32(4),
+                        IdCategoria = reader.GetInt32(5),
+                        Precio = reader.GetDecimal(6)
+                    });
+                }
+            }
+            catch (Exception ex)
+            {
+                // Captura cualquier excepcion que ocurra durante el proceso de lectura de datos.
+                var error = "Error parseando datos de SQL: " + ex.Message;
+
+                // Devuelve una nueva lista vacia de objetos Articulos.
+                return new List<Articulos>();
+            }
+            finally
+            {
+                // Cierra el lector de datos para liberar recursos.
+                reader.Close();
+                // Libera los recursos asociados con el comando SQL.
+                command.Dispose();
+                // Cierra la conexion a la base de datos para liberar recursos y finalizar la conexion.
+                conn.Close();
+            }
+
+            // Devuelve la lista de objetos Marca que se han leido de la base de datos.
+            return lista;
+        }
+
         public Task<Articulos> ModificarArticulos(Articulos articulos)
         {
             // falta hacer

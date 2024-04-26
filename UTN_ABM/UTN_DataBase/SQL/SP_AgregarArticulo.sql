@@ -6,7 +6,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-ALTER PROCEDURE [dbo].[AgregarArticulo]
+CREATE PROCEDURE [dbo].[AgregarArticulo]
   (  @Id INT,
     @Codigo VARCHAR(50),
     @Nombre VARCHAR(50),
