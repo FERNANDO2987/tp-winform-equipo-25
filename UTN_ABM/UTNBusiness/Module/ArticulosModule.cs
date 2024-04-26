@@ -198,17 +198,18 @@ namespace UTNBusiness.Module
                 {
                     lista.Add(new Detalle
                     {
-                        // Asigna valores a las propiedades del objeto Articulos utilizando los datos leidos.
-                        Id = reader.GetInt32(0),
-                        Codigo = reader.GetString(1),
-                        Nombre = reader.GetString(2),
-                        Descripcion = reader.GetString(3),
-                        Marca = reader.GetString(1),
-                        Categoria = reader.GetString(1),
-                        Precio = reader.GetDecimal(6),
-                        ImagenUrl = reader.GetString(2),
+                        Id = Convert.ToInt32(reader["Id"]),
+                        Codigo = Convert.ToString(reader["Codigo"]),
+                        Nombre = Convert.ToString(reader["Nombre"]),
+                        Descripcion = Convert.ToString(reader["Descripcion"]),
+                        Marca = Convert.ToString(reader["Marca"]),
+                        Categoria = Convert.ToString(reader["Categoria"]),
+                        Precio = Convert.ToDecimal(reader["Precio"]),
+                        ImagenUrl = Convert.ToString(reader["ImagenUrl"]),
                     });
                 }
+
+
             }
             catch (Exception ex)
             {
