@@ -71,6 +71,7 @@
             this.btn_BuscarDetalle.TabIndex = 16;
             this.btn_BuscarDetalle.Text = "Buscar";
             this.btn_BuscarDetalle.UseVisualStyleBackColor = false;
+            this.btn_BuscarDetalle.Click += new System.EventHandler(this.btn_BuscarDetalle_Click);
             // 
             // text_BuscarDetalle
             // 

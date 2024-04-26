@@ -89,6 +89,7 @@
     <Compile Include="Interfaces\IMarcasModule.cs" />
     <Compile Include="Models\Articulos.cs" />
     <Compile Include="Models\Categoria.cs" />
+    <Compile Include="Models\Detalle.cs" />
     <Compile Include="Models\Imagenes.cs" />
     <Compile Include="Models\Marca.cs" />
     <Compile Include="Module\ArticulosModule.cs" />
