@@ -36,6 +36,7 @@
             this.Detalles = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Detalles)).BeginInit();
+            this.Detalles.SuspendLayout();
             this.SuspendLayout();
             // 
             // label_Detalle
@@ -52,9 +53,9 @@
             // 
             this.groupBox1.Controls.Add(this.btn_BuscarDetalle);
             this.groupBox1.Controls.Add(this.text_BuscarDetalle);
-            this.groupBox1.Location = new System.Drawing.Point(42, 90);
+            this.groupBox1.Location = new System.Drawing.Point(18, 90);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(616, 66);
+            this.groupBox1.Size = new System.Drawing.Size(678, 66);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detalle de Articulo";
@@ -85,17 +86,18 @@
             this.dataGridView_Detalles.AllowUserToAddRows = false;
             this.dataGridView_Detalles.AllowUserToDeleteRows = false;
             this.dataGridView_Detalles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_Detalles.Location = new System.Drawing.Point(60, 178);
+            this.dataGridView_Detalles.Location = new System.Drawing.Point(6, 19);
             this.dataGridView_Detalles.Name = "dataGridView_Detalles";
             this.dataGridView_Detalles.ReadOnly = true;
-            this.dataGridView_Detalles.Size = new System.Drawing.Size(580, 172);
+            this.dataGridView_Detalles.Size = new System.Drawing.Size(672, 218);
             this.dataGridView_Detalles.TabIndex = 0;
             // 
             // Detalles
             // 
-            this.Detalles.Location = new System.Drawing.Point(51, 162);
+            this.Detalles.Controls.Add(this.dataGridView_Detalles);
+            this.Detalles.Location = new System.Drawing.Point(12, 162);
             this.Detalles.Name = "Detalles";
-            this.Detalles.Size = new System.Drawing.Size(598, 199);
+            this.Detalles.Size = new System.Drawing.Size(684, 259);
             this.Detalles.TabIndex = 6;
             this.Detalles.TabStop = false;
             this.Detalles.Text = "Detalles";
@@ -106,7 +108,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(708, 600);
-            this.Controls.Add(this.dataGridView_Detalles);
             this.Controls.Add(this.Detalles);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label_Detalle);
@@ -116,6 +117,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Detalles)).EndInit();
+            this.Detalles.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
