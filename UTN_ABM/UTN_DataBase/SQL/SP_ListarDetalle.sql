@@ -9,7 +9,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE PROCEDURE [dbo].[ListarDetalle]
-@criterio varchar(50)
+@criterio varchar(50) = NULL
 AS
 BEGIN
      SET NOCOUNT ON;
@@ -19,28 +19,30 @@ BEGIN
 	 A.Codigo,
 	 A.Nombre,
 	 A.Descripcion,
-	 M.Descripcion AS Marca,
-	 C.Descripcion AS Categoria,
+	 COALESCE(M.Descripcion, 'null') AS Marca,
+	 COALESCE(C.Descripcion, 'null') AS Categoria,
 	 A.Precio,
-	 I.ImagenUrl
-
+	 COALESCE(I.ImagenUrl, 'null') AS ImagenUrl
 	 FROM 
-	  ARTICULOS A
-
+	 ARTICULOS A
 	 LEFT JOIN
 	 MARCAS M ON A.IdMarca = M.Id
-
 	 LEFT JOIN
 	 CATEGORIAS C ON A.IdCategoria = C.Id
-
 	 LEFT JOIN 
 	 IMAGENES I ON A.Id = I.IdArticulo
-
 	 WHERE 
-	     A.Nombre LIKE '%' + @criterio + '%';
+	 (
+	     A.Nombre LIKE '%' + @criterio + '%'
+	     OR
+	     COALESCE(M.Descripcion, 'null') LIKE '%' + @criterio + '%'
+	     OR
+	     COALESCE(C.Descripcion, 'null') LIKE '%' + @criterio + '%'
+	     OR
+	     CONVERT(varchar(50), A.Precio) LIKE '%' + @criterio + '%'
+	     OR
+	     COALESCE(I.ImagenUrl, 'null') LIKE '%' + @criterio + '%'
+	 );
 
-		 END;
-
-		 GO
-
-
+END;
+GO
