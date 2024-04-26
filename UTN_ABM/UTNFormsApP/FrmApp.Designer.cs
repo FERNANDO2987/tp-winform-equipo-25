@@ -40,7 +40,9 @@
             this.panelMargen = new System.Windows.Forms.Panel();
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.panelMovimiento = new System.Windows.Forms.Panel();
+            this.label_Inicio = new System.Windows.Forms.Label();
             this.panelLateral.SuspendLayout();
+            this.panelContenedor.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelLateral
@@ -209,6 +211,7 @@
             // panelContenedor
             // 
             this.panelContenedor.BackColor = System.Drawing.Color.LightGray;
+            this.panelContenedor.Controls.Add(this.label_Inicio);
             this.panelContenedor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(242, 0);
@@ -226,6 +229,17 @@
             this.panelMovimiento.TabIndex = 0;
             this.panelMovimiento.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMovimiento_Paint);
             // 
+            // label_Inicio
+            // 
+            this.label_Inicio.AutoSize = true;
+            this.label_Inicio.BackColor = System.Drawing.Color.LightGray;
+            this.label_Inicio.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Inicio.Location = new System.Drawing.Point(136, 242);
+            this.label_Inicio.Name = "label_Inicio";
+            this.label_Inicio.Size = new System.Drawing.Size(352, 39);
+            this.label_Inicio.TabIndex = 5;
+            this.label_Inicio.Text = "Bienvenidos a la ABM";
+            // 
             // FrmApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -239,6 +253,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AppABM";
             this.panelLateral.ResumeLayout(false);
+            this.panelContenedor.ResumeLayout(false);
+            this.panelContenedor.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -257,6 +273,7 @@
         private System.Windows.Forms.Button btn_Buscar;
         private System.Windows.Forms.Button btn_Salir;
         private System.Windows.Forms.Panel panelMovimiento;
+        private System.Windows.Forms.Label label_Inicio;
     }
 }
 

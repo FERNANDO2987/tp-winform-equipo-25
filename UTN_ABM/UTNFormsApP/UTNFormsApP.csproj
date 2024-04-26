@@ -179,12 +179,6 @@
     <Compile Include="FrmEliminar.Designer.cs">
       <DependentUpon>FrmEliminar.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmInicio.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmInicio.Designer.cs">
-      <DependentUpon>FrmInicio.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmListar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,9 +208,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEliminar.resx">
       <DependentUpon>FrmEliminar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmInicio.resx">
-      <DependentUpon>FrmInicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmListar.resx">
       <DependentUpon>FrmListar.cs</DependentUpon>

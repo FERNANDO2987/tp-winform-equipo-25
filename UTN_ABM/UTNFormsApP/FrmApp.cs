@@ -18,9 +18,11 @@ namespace UTNFormsApP
         public FrmApp()
         {
             InitializeComponent();
-     
 
-            
+            // Mostrar el label_Inicio al inicializar el formulario
+            label_Inicio.Visible = true;
+
+
         }
 
 
@@ -157,23 +159,24 @@ namespace UTNFormsApP
 
         private void btnInicio_Click(object sender, EventArgs e)
         {
-            // Crear una instancia del formulario que deseas agregar
-            FrmInicio formularioInicio = new FrmInicio();
-
-            // Establecer TopLevel en false para que se pueda agregar al panelContenedor
-            formularioInicio.TopLevel = false;
-
             // Limpiar los controles existentes en el panelContenedor
             panelContenedor.Controls.Clear();
 
-            // Agregar el formulario al panelContenedor
-            panelContenedor.Controls.Add(formularioInicio);
+            // Crear un nuevo label para mostrar "Inicio"
+            Label labelInicio = new Label();
+            labelInicio.Text = "Inicio:";
+            labelInicio.AutoSize = true; // Para que el tamaño del label se ajuste automáticamente al texto
+            labelInicio.Location = new Point(10, 10); // Puedes ajustar las coordenadas según tu diseño
 
-            // Mostrar el formulario en el panelContenedor
-            formularioInicio.Show();
+            // Agregar el label al panelContenedor
+            panelContenedor.Controls.Add(labelInicio);
 
+            // Mostrar el panelContenedor
+            panelContenedor.Visible = true;
         }
-    
+
+
+
         private void panelMovimiento_Paint(object sender, PaintEventArgs e)
         {
             panelMovimiento.MouseMove += PanelMovimiento_MouseMove;

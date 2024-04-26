@@ -80,46 +80,61 @@ namespace UTNFormsApP
             }
         }
 
-        private void btn_Guardar_Click(object sender, EventArgs e)
+        // Método para obtener el ID de la cadena seleccionada en el ComboBox
+        private int ObtenerIdSeleccionado(string selectedItem)
         {
+            // Dividir la cadena en espacio para obtener el ID
+            string[] partes = selectedItem.Split(' ');
+            // El ID está en la primera parte de la cadena
+            return Convert.ToInt32(partes[0]);
+        }
 
-            // Obtener los valores de los campos
-            int CodArticulo = int.Parse(text_CodArticulo.Text); // Convertir el valor a entero
-            string descripcion = text_Descripcion.Text;
-            string precio = text_Precio.Text;
-            string marca = cbox_Marca.Text;
-            string categoria = cbox_Categoria.Text;
+        private async void btn_Guardar_Click(object sender, EventArgs e)
+        {
+            string connectionString = ConfigurationManager.AppSettings["ConnectionStringUTN"];
 
-            // Obtener el ID de la marca seleccionada
-            int idMarca = int.Parse(marca.Split('-')[0].Trim()); // Obtener el ID de la marca seleccionada
-            int idCategoria = int.Parse(categoria.Split('-')[0].Trim()); // Obtener el ID de la marca seleccionada
+            ArticulosModule articuloModule = new ArticulosModule(connectionString);
 
-            // Crear un nuevo objeto de tipo Articulo
-            /*Articulos articulo = new Articulos*/
-
-            
-/*
-            var articulo = new Articulos()
-          Interfaces y Formulario Buscar
+            var articulo = new Articulos
             {
-                Descripcion = descripcion,
-                Precio = decimal.Parse(precio),
-                IdMarca = idMarca,
-                IdCategoria = idCategoria
-            };*/
+                Codigo = text_CodArticulo.Text,
+                Nombre = textNombre.Text,
+                Descripcion = text_Descripcion.Text,
+                IdMarca = ObtenerIdSeleccionado(cbox_Marca.SelectedItem.ToString()),
+                IdCategoria = ObtenerIdSeleccionado(cbox_Categoria.SelectedItem.ToString()),
+                Precio = Convert.ToDecimal(text_Precio.Text)
+            };
 
-            // Guardar el nuevo artículo en la base de datos.
-            // falta terminar de implementar. para fer
+            await articuloModule.AgregarArticulos(articulo);
 
-            /*IArticulosModule.(articulo);*/
+
+
+
+
 
             // Mostrar un mensaje de éxito
             MessageBox.Show("Artículo agregado correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+            // Limpiar los controles
+            LimpiarControles();
+
             // Cerrar el formulario
-            this.Close();
+            //this.Close();
             
         
+        }
+
+        private void LimpiarControles()
+        {
+            // Limpiar TextBox
+            text_CodArticulo.Text = "";
+            textNombre.Text = "";
+            text_Descripcion.Text = "";
+            text_Precio.Text = "";
+
+            // Limpiar ComboBox
+            cbox_Marca.SelectedIndex = -1;
+            cbox_Categoria.SelectedIndex = -1;
         }
 
         private void cbox_Marca_SelectedIndexChanged(object sender, EventArgs e)

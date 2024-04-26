@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label_CodArticulo = new System.Windows.Forms.Label();
             this.label_Nombre = new System.Windows.Forms.Label();
@@ -47,6 +48,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btn_Selecionar = new System.Windows.Forms.Button();
             this.pbImagen = new System.Windows.Forms.PictureBox();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).BeginInit();
@@ -243,11 +245,17 @@
             // 
             // pbImagen
             // 
-            this.pbImagen.Location = new System.Drawing.Point(6, 30);
+            this.pbImagen.Location = new System.Drawing.Point(6, 26);
             this.pbImagen.Name = "pbImagen";
             this.pbImagen.Size = new System.Drawing.Size(270, 197);
             this.pbImagen.TabIndex = 0;
             this.pbImagen.TabStop = false;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // FrmAgregar
             // 
@@ -293,5 +301,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btn_Selecionar;
         private System.Windows.Forms.PictureBox pbImagen;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }

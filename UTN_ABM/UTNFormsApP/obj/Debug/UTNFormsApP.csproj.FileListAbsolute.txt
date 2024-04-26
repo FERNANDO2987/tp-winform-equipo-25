@@ -55,9 +55,7 @@ D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmApp.resources
 D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmBuscar.resources
 D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmDetalle.resources
 D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmEliminar.resources
-D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmInicio.resources
 D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmListar.resources
-D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmMenuPrincipal.resources
 D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmModificar.resources
 D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.Properties.Resources.resources
 D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApp.csproj.GenerateResource.cache
