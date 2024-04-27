@@ -17,10 +17,41 @@ namespace UTNFormsApP
         public FrmBuscar()
         {
             InitializeComponent();
-           // InicializarSelectArticulos();
+            InitializeTextBoxes();
+            
+
         }
 
-        
+
+        private void InitializeTextBoxes()
+        {
+            SetPlaceholder(text_Buscar, "Ingrese cualquier criterio para Buscar un Articulo");
+
+
+        }
+
+        private void SetPlaceholder(TextBox textBox, string placeholder)
+        {
+            textBox.ForeColor = SystemColors.GrayText;
+            textBox.Text = placeholder;
+            textBox.Enter += (sender, e) =>
+            {
+                if (textBox.Text == placeholder)
+                {
+                    textBox.Text = "";
+                    textBox.ForeColor = SystemColors.WindowText;
+                }
+            };
+            textBox.Leave += (sender, e) =>
+            {
+                if (string.IsNullOrWhiteSpace(textBox.Text))
+                {
+                    textBox.ForeColor = SystemColors.GrayText;
+                    textBox.Text = placeholder;
+                }
+            };
+        }
+
         private async void InicializarSelectArticulos()
         {
             string connectionString = ConfigurationManager.AppSettings["ConnectionStringUTN"];
@@ -30,25 +61,27 @@ namespace UTNFormsApP
             {
                 var valor = text_Buscar.Text;
 
-                var articulos = await marcaModule.BuscarArticuloPorCriterio(valor);
-                // Agrega cada artículo individualmente al DataGridView
-                dataGridView_Buscar.DataSource = articulos;
+                if (!string.IsNullOrWhiteSpace(valor))
+                {
+                    var articulos = await marcaModule.BuscarArticuloPorCriterio(valor);
+                    if (articulos.Any()) // Verifica si se encontraron artículos
+                    {
+                        // Agrega cada artículo individualmente al DataGridView
+                        dataGridView_Buscar.DataSource = articulos;
 
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-        }
-
-
-        private async void btn_Buscar_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                // Llamar al método para inicializar la búsqueda de artículos
-                InicializarSelectArticulos();
+                        
+                    }
+                    else
+                    {
+                        // Mostrar un mensaje si no se encontraron resultados
+                        MessageBox.Show("Debe agregar un criterio en la búsqueda.", "Sin Resultados", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                else
+                {
+                    // Mostrar un mensaje si el campo está vacío
+                    MessageBox.Show("Debe completar el TextBox antes de realizar la búsqueda.", "Campo Vacío", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
             catch (Exception ex)
             {
@@ -57,5 +90,38 @@ namespace UTNFormsApP
             }
         }
 
+        private bool CampoCompleto()
+        {
+            return !string.IsNullOrWhiteSpace(text_Buscar.Text);
+
+        }
+
+      
+
+      
+        private async void btn_Buscar_Click(object sender, EventArgs e)
+        {
+
+            if (CampoCompleto() ==true)
+            {
+                try
+                {
+                    // Llamar al método para inicializar la búsqueda de artículos
+                    InicializarSelectArticulos();
+                  
+                }
+                catch (Exception ex)
+                {
+                    // Manejar cualquier error que ocurra durante la inicialización
+                    MessageBox.Show("Error al buscar en la base de datos: " + ex.Message);
+                }
+            }
+            else
+            {
+                // Mostrar un mensaje si los campos no están completos
+                MessageBox.Show("Antes de Buscar debe escribir un Criterio.", "Campo Incompleto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+        }
     }
 }

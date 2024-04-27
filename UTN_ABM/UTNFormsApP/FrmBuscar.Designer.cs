@@ -53,22 +53,26 @@
             // 
             this.groupBox1.Controls.Add(this.btn_Buscar);
             this.groupBox1.Controls.Add(this.text_Buscar);
+            this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.groupBox1.Location = new System.Drawing.Point(12, 83);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(616, 66);
+            this.groupBox1.Size = new System.Drawing.Size(684, 66);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Buscar Articulo";
             // 
             // btn_Buscar
             // 
-            this.btn_Buscar.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btn_Buscar.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btn_Buscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btn_Buscar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Buscar.FlatAppearance.BorderSize = 0;
+            this.btn_Buscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.IndianRed;
+            this.btn_Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Buscar.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.btn_Buscar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_Buscar.Location = new System.Drawing.Point(493, 25);
+            this.btn_Buscar.Location = new System.Drawing.Point(557, 22);
             this.btn_Buscar.Name = "btn_Buscar";
-            this.btn_Buscar.Size = new System.Drawing.Size(105, 24);
+            this.btn_Buscar.Size = new System.Drawing.Size(105, 35);
             this.btn_Buscar.TabIndex = 16;
             this.btn_Buscar.Text = "Buscar";
             this.btn_Buscar.UseVisualStyleBackColor = false;
@@ -76,17 +80,19 @@
             // 
             // text_Buscar
             // 
+            this.text_Buscar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.text_Buscar.Location = new System.Drawing.Point(18, 29);
             this.text_Buscar.Name = "text_Buscar";
-            this.text_Buscar.Size = new System.Drawing.Size(460, 20);
+            this.text_Buscar.Size = new System.Drawing.Size(519, 23);
             this.text_Buscar.TabIndex = 0;
             // 
             // Lista
             // 
             this.Lista.Controls.Add(this.dataGridView_Buscar);
+            this.Lista.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.Lista.Location = new System.Drawing.Point(13, 171);
             this.Lista.Name = "Lista";
-            this.Lista.Size = new System.Drawing.Size(615, 198);
+            this.Lista.Size = new System.Drawing.Size(683, 393);
             this.Lista.TabIndex = 5;
             this.Lista.TabStop = false;
             this.Lista.Text = "Lista";
@@ -96,10 +102,10 @@
             this.dataGridView_Buscar.AllowUserToAddRows = false;
             this.dataGridView_Buscar.AllowUserToDeleteRows = false;
             this.dataGridView_Buscar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_Buscar.Location = new System.Drawing.Point(17, 20);
+            this.dataGridView_Buscar.Location = new System.Drawing.Point(6, 19);
             this.dataGridView_Buscar.Name = "dataGridView_Buscar";
             this.dataGridView_Buscar.ReadOnly = true;
-            this.dataGridView_Buscar.Size = new System.Drawing.Size(580, 172);
+            this.dataGridView_Buscar.Size = new System.Drawing.Size(671, 344);
             this.dataGridView_Buscar.TabIndex = 0;
             // 
             // FrmBuscar
