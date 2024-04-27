@@ -108,7 +108,9 @@ namespace UTNFormsApP
                 {
                     // Llamar al método para inicializar la búsqueda de artículos
                     InicializarSelectArticulos();
-                  
+                    LimpiarControles();
+
+
                 }
                 catch (Exception ex)
                 {
@@ -122,6 +124,19 @@ namespace UTNFormsApP
                 MessageBox.Show("Antes de Buscar debe escribir un Criterio.", "Campo Incompleto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
+        }
+
+        private void LimpiarControles()
+        {
+            // Limpiar TextBox
+            text_Buscar.Text = "";
+
+        }
+
+        private void btn_Limpiar_Click(object sender, EventArgs e)
+        {
+            // Limpiar el DataGridView asignándole null como origen de datos
+            dataGridView_Buscar.DataSource = null;
         }
     }
 }

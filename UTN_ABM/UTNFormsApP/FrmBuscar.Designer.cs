@@ -34,6 +34,7 @@
             this.text_Buscar = new System.Windows.Forms.TextBox();
             this.Lista = new System.Windows.Forms.GroupBox();
             this.dataGridView_Buscar = new System.Windows.Forms.DataGridView();
+            this.btn_Limpiar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.Lista.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Buscar)).BeginInit();
@@ -92,7 +93,7 @@
             this.Lista.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.Lista.Location = new System.Drawing.Point(13, 171);
             this.Lista.Name = "Lista";
-            this.Lista.Size = new System.Drawing.Size(683, 393);
+            this.Lista.Size = new System.Drawing.Size(683, 362);
             this.Lista.TabIndex = 5;
             this.Lista.TabStop = false;
             this.Lista.Text = "Lista";
@@ -105,8 +106,25 @@
             this.dataGridView_Buscar.Location = new System.Drawing.Point(6, 19);
             this.dataGridView_Buscar.Name = "dataGridView_Buscar";
             this.dataGridView_Buscar.ReadOnly = true;
-            this.dataGridView_Buscar.Size = new System.Drawing.Size(671, 344);
+            this.dataGridView_Buscar.Size = new System.Drawing.Size(671, 317);
             this.dataGridView_Buscar.TabIndex = 0;
+            // 
+            // btn_Limpiar
+            // 
+            this.btn_Limpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btn_Limpiar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Limpiar.FlatAppearance.BorderSize = 0;
+            this.btn_Limpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.IndianRed;
+            this.btn_Limpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Limpiar.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.btn_Limpiar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_Limpiar.Location = new System.Drawing.Point(293, 539);
+            this.btn_Limpiar.Name = "btn_Limpiar";
+            this.btn_Limpiar.Size = new System.Drawing.Size(121, 35);
+            this.btn_Limpiar.TabIndex = 17;
+            this.btn_Limpiar.Text = "Limpiar Tabla";
+            this.btn_Limpiar.UseVisualStyleBackColor = false;
+            this.btn_Limpiar.Click += new System.EventHandler(this.btn_Limpiar_Click);
             // 
             // FrmBuscar
             // 
@@ -114,6 +132,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(708, 600);
+            this.Controls.Add(this.btn_Limpiar);
             this.Controls.Add(this.Lista);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label_Buscar);
@@ -137,5 +156,6 @@
         private System.Windows.Forms.Button btn_Buscar;
         private System.Windows.Forms.GroupBox Lista;
         private System.Windows.Forms.DataGridView dataGridView_Buscar;
+        private System.Windows.Forms.Button btn_Limpiar;
     }
 }
