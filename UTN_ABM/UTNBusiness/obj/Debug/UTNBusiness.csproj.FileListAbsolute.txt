@@ -38,13 +38,7 @@ D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\bin\Debug\System.Memory.dll
 D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\bin\Debug\System.Numerics.Vectors.dll
 D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\bin\Debug\System.ValueTuple.dll
-D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
-D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\bin\Debug\Microsoft.Extensions.Primitives.xml
 D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\bin\Debug\System.Buffers.xml
-D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\bin\Debug\System.Memory.xml
-D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\bin\Debug\System.Numerics.Vectors.xml
-D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\bin\Debug\System.ValueTuple.xml
 D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\obj\Debug\UTNBusiness.csproj.AssemblyReference.cache
 D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\obj\Debug\UTNBusiness.csproj.CoreCompileInputs.cache
 D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\obj\Debug\UTNBusin.DC20B92A.Up2Date

@@ -28,7 +28,7 @@ namespace UTNBusiness.Module
 
             var conn = new SqlConnection(sqlconString);
 
-            SqlCommand command = new SqlCommand("AgregarImagen", conn)
+            SqlCommand command = new SqlCommand("AgregarImagenes", conn)
             {
                 CommandType = System.Data.CommandType.StoredProcedure
             };
