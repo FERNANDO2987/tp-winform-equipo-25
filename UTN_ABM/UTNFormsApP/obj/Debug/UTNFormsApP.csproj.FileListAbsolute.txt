@@ -13,7 +13,6 @@ C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 
 C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmBuscar.resources
 C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmDetalle.resources
 C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmEliminar.resources
-C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmInicio.resources
 C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmListar.resources
 C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.FrmModificar.resources
 C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.Properties.Resources.resources

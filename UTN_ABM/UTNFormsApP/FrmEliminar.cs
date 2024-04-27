@@ -16,5 +16,10 @@ namespace UTNFormsApP
         {
             InitializeComponent();
         }
+
+        private void btn_BuscarDetalle_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -39,8 +39,8 @@
             this.btnInicio = new System.Windows.Forms.Button();
             this.panelMargen = new System.Windows.Forms.Panel();
             this.panelContenedor = new System.Windows.Forms.Panel();
-            this.panelMovimiento = new System.Windows.Forms.Panel();
             this.label_Inicio = new System.Windows.Forms.Label();
+            this.panelMovimiento = new System.Windows.Forms.Panel();
             this.panelLateral.SuspendLayout();
             this.panelContenedor.SuspendLayout();
             this.SuspendLayout();
@@ -219,6 +219,17 @@
             this.panelContenedor.Size = new System.Drawing.Size(708, 600);
             this.panelContenedor.TabIndex = 1;
             // 
+            // label_Inicio
+            // 
+            this.label_Inicio.AutoSize = true;
+            this.label_Inicio.BackColor = System.Drawing.Color.LightGray;
+            this.label_Inicio.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Inicio.Location = new System.Drawing.Point(168, 108);
+            this.label_Inicio.Name = "label_Inicio";
+            this.label_Inicio.Size = new System.Drawing.Size(352, 39);
+            this.label_Inicio.TabIndex = 5;
+            this.label_Inicio.Text = "Bienvenidos a la ABM";
+            // 
             // panelMovimiento
             // 
             this.panelMovimiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
@@ -228,17 +239,6 @@
             this.panelMovimiento.Size = new System.Drawing.Size(708, 30);
             this.panelMovimiento.TabIndex = 0;
             this.panelMovimiento.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMovimiento_Paint);
-            // 
-            // label_Inicio
-            // 
-            this.label_Inicio.AutoSize = true;
-            this.label_Inicio.BackColor = System.Drawing.Color.LightGray;
-            this.label_Inicio.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Inicio.Location = new System.Drawing.Point(136, 242);
-            this.label_Inicio.Name = "label_Inicio";
-            this.label_Inicio.Size = new System.Drawing.Size(352, 39);
-            this.label_Inicio.TabIndex = 5;
-            this.label_Inicio.Text = "Bienvenidos a la ABM";
             // 
             // FrmApp
             // 
