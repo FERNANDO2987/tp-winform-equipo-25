@@ -34,6 +34,7 @@
             this.text_BuscarDetalle = new System.Windows.Forms.TextBox();
             this.dataGridView_Detalles = new System.Windows.Forms.DataGridView();
             this.Detalles = new System.Windows.Forms.GroupBox();
+            this.btn_Limpiar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Detalles)).BeginInit();
             this.Detalles.SuspendLayout();
@@ -53,6 +54,7 @@
             // 
             this.groupBox1.Controls.Add(this.btn_BuscarDetalle);
             this.groupBox1.Controls.Add(this.text_BuscarDetalle);
+            this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.groupBox1.Location = new System.Drawing.Point(18, 90);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(678, 66);
@@ -62,13 +64,14 @@
             // 
             // btn_BuscarDetalle
             // 
-            this.btn_BuscarDetalle.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btn_BuscarDetalle.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btn_BuscarDetalle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btn_BuscarDetalle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_BuscarDetalle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_BuscarDetalle.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.btn_BuscarDetalle.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_BuscarDetalle.Location = new System.Drawing.Point(484, 22);
+            this.btn_BuscarDetalle.Location = new System.Drawing.Point(545, 23);
             this.btn_BuscarDetalle.Name = "btn_BuscarDetalle";
-            this.btn_BuscarDetalle.Size = new System.Drawing.Size(114, 30);
+            this.btn_BuscarDetalle.Size = new System.Drawing.Size(114, 33);
             this.btn_BuscarDetalle.TabIndex = 16;
             this.btn_BuscarDetalle.Text = "Buscar";
             this.btn_BuscarDetalle.UseVisualStyleBackColor = false;
@@ -76,9 +79,10 @@
             // 
             // text_BuscarDetalle
             // 
+            this.text_BuscarDetalle.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.text_BuscarDetalle.Location = new System.Drawing.Point(18, 29);
             this.text_BuscarDetalle.Name = "text_BuscarDetalle";
-            this.text_BuscarDetalle.Size = new System.Drawing.Size(460, 20);
+            this.text_BuscarDetalle.Size = new System.Drawing.Size(506, 23);
             this.text_BuscarDetalle.TabIndex = 0;
             // 
             // dataGridView_Detalles
@@ -89,18 +93,34 @@
             this.dataGridView_Detalles.Location = new System.Drawing.Point(6, 19);
             this.dataGridView_Detalles.Name = "dataGridView_Detalles";
             this.dataGridView_Detalles.ReadOnly = true;
-            this.dataGridView_Detalles.Size = new System.Drawing.Size(672, 218);
+            this.dataGridView_Detalles.Size = new System.Drawing.Size(672, 290);
             this.dataGridView_Detalles.TabIndex = 0;
             // 
             // Detalles
             // 
             this.Detalles.Controls.Add(this.dataGridView_Detalles);
+            this.Detalles.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.Detalles.Location = new System.Drawing.Point(12, 162);
             this.Detalles.Name = "Detalles";
-            this.Detalles.Size = new System.Drawing.Size(684, 259);
+            this.Detalles.Size = new System.Drawing.Size(684, 339);
             this.Detalles.TabIndex = 6;
             this.Detalles.TabStop = false;
             this.Detalles.Text = "Detalles";
+            // 
+            // btn_Limpiar
+            // 
+            this.btn_Limpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btn_Limpiar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Limpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Limpiar.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.btn_Limpiar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_Limpiar.Location = new System.Drawing.Point(277, 521);
+            this.btn_Limpiar.Name = "btn_Limpiar";
+            this.btn_Limpiar.Size = new System.Drawing.Size(114, 33);
+            this.btn_Limpiar.TabIndex = 17;
+            this.btn_Limpiar.Text = "Limpiar Tabla";
+            this.btn_Limpiar.UseVisualStyleBackColor = false;
+            this.btn_Limpiar.Click += new System.EventHandler(this.btn_Limpiar_Click);
             // 
             // FrmDetalle
             // 
@@ -108,6 +128,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(708, 600);
+            this.Controls.Add(this.btn_Limpiar);
             this.Controls.Add(this.Detalles);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label_Detalle);
@@ -131,5 +152,6 @@
         private System.Windows.Forms.TextBox text_BuscarDetalle;
         private System.Windows.Forms.DataGridView dataGridView_Detalles;
         private System.Windows.Forms.GroupBox Detalles;
+        private System.Windows.Forms.Button btn_Limpiar;
     }
 }

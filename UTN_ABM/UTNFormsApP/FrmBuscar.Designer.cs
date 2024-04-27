@@ -83,7 +83,7 @@
             this.text_Buscar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.text_Buscar.Location = new System.Drawing.Point(18, 29);
             this.text_Buscar.Name = "text_Buscar";
-            this.text_Buscar.Size = new System.Drawing.Size(519, 23);
+            this.text_Buscar.Size = new System.Drawing.Size(518, 23);
             this.text_Buscar.TabIndex = 0;
             // 
             // Lista

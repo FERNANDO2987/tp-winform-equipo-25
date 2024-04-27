@@ -17,7 +17,38 @@ namespace UTNFormsApP
         public FrmDetalle()
         {
             InitializeComponent();
+            InitializeTextBoxes();
             dataGridView_Detalles.CellClick += dataGridView_Detalles_CellDoubleClick;
+        }
+
+
+        private void InitializeTextBoxes()
+        {
+            SetPlaceholder(text_BuscarDetalle, "Ingrese cualquier criterio para Buscar el Detalle del Articulo");
+
+
+        }
+
+        private void SetPlaceholder(TextBox textBox, string placeholder)
+        {
+            textBox.ForeColor = SystemColors.GrayText;
+            textBox.Text = placeholder;
+            textBox.Enter += (sender, e) =>
+            {
+                if (textBox.Text == placeholder)
+                {
+                    textBox.Text = "";
+                    textBox.ForeColor = SystemColors.WindowText;
+                }
+            };
+            textBox.Leave += (sender, e) =>
+            {
+                if (string.IsNullOrWhiteSpace(textBox.Text))
+                {
+                    textBox.ForeColor = SystemColors.GrayText;
+                    textBox.Text = placeholder;
+                }
+            };
         }
 
         // Método para manejar el evento CellDoubleClick del DataGridView
@@ -85,8 +116,6 @@ namespace UTNFormsApP
 
 
 
-
-
         private async void InicializarSelectArticulos()
         {
             string connectionString = ConfigurationManager.AppSettings["ConnectionStringUTN"];
@@ -95,12 +124,33 @@ namespace UTNFormsApP
             try
             {
                 var criterio = text_BuscarDetalle.Text;
+                if (!string.IsNullOrWhiteSpace(criterio))
+                {
+                    
 
-                var articulos = await marcaModule.BuscarDetallePorArticulo(criterio);
-                // Agrega cada artículo individualmente al DataGridView
-                dataGridView_Detalles.DataSource = articulos;
+                    var articulos = await marcaModule.BuscarDetallePorArticulo(criterio);
+
+                    if (articulos.Any()) // Verifica si se encontraron artículos
+                    {
+                        // Agrega cada artículo individualmente al DataGridView
+                        dataGridView_Detalles.DataSource = articulos;
 
 
+                    }
+                    else
+                    {
+                        // Mostrar un mensaje si no se encontraron resultados
+                        MessageBox.Show("Debe agregar un criterio en la búsqueda.", "Sin Resultados", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    // Agrega cada artículo individualmente al DataGridView
+                   
+
+                }
+                else
+                {
+                    // Mostrar un mensaje si el campo está vacío
+                    MessageBox.Show("Debe completar el TextBox antes de realizar la búsqueda.", "Campo Vacío", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
 
             }
             catch (Exception)
@@ -110,19 +160,50 @@ namespace UTNFormsApP
             }
         }
 
+        private bool CampoCompleto()
+        {
+            return !string.IsNullOrWhiteSpace(text_BuscarDetalle.Text);
+
+        }
+
         private void btn_BuscarDetalle_Click(object sender, EventArgs e)
         {
 
-            try
+            if (CampoCompleto() == true)
             {
-                // Llamar al método para inicializar la búsqueda de artículos
-                InicializarSelectArticulos();
+
+                try
+                {
+                    // Llamar al método para inicializar la búsqueda de artículos
+                    InicializarSelectArticulos();
+                    LimpiarControles();
+                }
+                catch (Exception ex)
+                {
+                    // Manejar cualquier error que ocurra durante la inicialización
+                    MessageBox.Show("Error al buscar en la base de datos: " + ex.Message);
+                }
             }
-            catch (Exception ex)
+            else
             {
-                // Manejar cualquier error que ocurra durante la inicialización
-                MessageBox.Show("Error al buscar en la base de datos: " + ex.Message);
+                // Mostrar un mensaje si los campos no están completos
+                MessageBox.Show("Antes de Buscar debe escribir un Criterio.", "Campo Incompleto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                LimpiarControles();
             }
+
+        }
+
+        private void LimpiarControles()
+        {
+            // Limpiar TextBox
+            text_BuscarDetalle.Text = "";
+        
+        }
+
+        private void btn_Limpiar_Click(object sender, EventArgs e)
+        {
+            // Limpiar el DataGridView asignándole null como origen de datos
+            dataGridView_Detalles.DataSource = null;
 
         }
     }
