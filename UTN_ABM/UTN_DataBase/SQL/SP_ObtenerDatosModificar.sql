@@ -1,12 +1,12 @@
 ﻿USE [CATALOGO_P3_DB]
 GO
-/****** Object:  StoredProcedure [dbo].[ListarDetalle]    Script Date: 27/04/2024 20:24:16 ******/
+/****** Object:  StoredProcedure [dbo].[ObtenerDatosModificar]    Script Date: 27/04/2024 22:50:46 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE PROCEDURE [dbo].[ObtenerDatosModificar]
+ALTER PROCEDURE [dbo].[ObtenerDatosModificar]
 @criterio varchar(50) = NULL
 AS
 BEGIN
@@ -20,7 +20,9 @@ BEGIN
 	 COALESCE(M.Descripcion, 'null') AS Marca,
 	 COALESCE(C.Descripcion, 'null') AS Categoria,
 	 A.Precio,
-	 COALESCE(I.ImagenUrl, 'null') AS ImagenUrl
+	 COALESCE(I.ImagenUrl, 'null') AS ImagenUrl,
+	 M.Id,
+	 C.Id
 	 FROM 
 	 ARTICULOS A
 	 LEFT JOIN
