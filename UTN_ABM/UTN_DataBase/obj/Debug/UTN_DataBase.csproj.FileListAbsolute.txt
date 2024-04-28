@@ -1,12 +1,12 @@
-D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTN_DataBase\bin\Debug\UTN_DataBase.dll
-D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTN_DataBase\bin\Debug\UTN_DataBase.pdb
-D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTN_DataBase\obj\Debug\UTN_DataBase.csproj.AssemblyReference.cache
-D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTN_DataBase\obj\Debug\UTN_DataBase.csproj.CoreCompileInputs.cache
-D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTN_DataBase\obj\Debug\UTN_DataBase.dll
-D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTN_DataBase\obj\Debug\UTN_DataBase.pdb
 C:\Users\WACHIN\Desktop\proyecto prog 3\Nueva carpeta\UTN_ABM\UTN_DataBase\bin\Debug\UTN_DataBase.dll
 C:\Users\WACHIN\Desktop\proyecto prog 3\Nueva carpeta\UTN_ABM\UTN_DataBase\bin\Debug\UTN_DataBase.pdb
 C:\Users\WACHIN\Desktop\proyecto prog 3\Nueva carpeta\UTN_ABM\UTN_DataBase\obj\Debug\UTN_DataBase.csproj.AssemblyReference.cache
 C:\Users\WACHIN\Desktop\proyecto prog 3\Nueva carpeta\UTN_ABM\UTN_DataBase\obj\Debug\UTN_DataBase.csproj.CoreCompileInputs.cache
 C:\Users\WACHIN\Desktop\proyecto prog 3\Nueva carpeta\UTN_ABM\UTN_DataBase\obj\Debug\UTN_DataBase.dll
 C:\Users\WACHIN\Desktop\proyecto prog 3\Nueva carpeta\UTN_ABM\UTN_DataBase\obj\Debug\UTN_DataBase.pdb
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTN_DataBase\bin\Debug\UTN_DataBase.dll
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTN_DataBase\bin\Debug\UTN_DataBase.pdb
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTN_DataBase\obj\Debug\UTN_DataBase.csproj.AssemblyReference.cache
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTN_DataBase\obj\Debug\UTN_DataBase.csproj.CoreCompileInputs.cache
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTN_DataBase\obj\Debug\UTN_DataBase.dll
+D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTN_DataBase\obj\Debug\UTN_DataBase.pdb

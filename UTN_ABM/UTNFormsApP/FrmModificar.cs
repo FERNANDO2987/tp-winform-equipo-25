@@ -126,6 +126,8 @@ namespace UTNFormsApP
 
             ArticulosModule result = new ArticulosModule(connectionString);
             ImagenesModule imagenesModule = new ImagenesModule(connectionString);
+            CategoriaModule categoriaModule = new CategoriaModule(connectionString);
+            MarcasModule  marcasModule = new MarcasModule(connectionString);
 
             try
             {
@@ -148,8 +150,7 @@ namespace UTNFormsApP
                     // Obtener el nuevo valor modificado para la Columna Descripcion de la Marca
                     string nuevaMarca = row.Cells["Marca"].Value.ToString();
 
-                    // Obtener el nuevo valor modificado para la Columna Descripcion de la Categoria
-                    string nuevaCategoria = row.Cells["Categoria"].Value.ToString();
+                 
 
                     int NuevoIdMarca = Convert.ToInt32(row.Cells["IdMarca"].Value);
 
@@ -158,47 +159,1114 @@ namespace UTNFormsApP
                     // Obtener el nuevo valor modificado para la Columna Precio
                     decimal nuevoPrecio = Convert.ToDecimal(row.Cells["Precio"].Value);
 
-                    string nuevaUrl = row.Cells["ImagenUrl"].Value.ToString();
+                   
+
+                    // Actualizar el artículo en la base de datos
+               
 
                     int id = Convert.ToInt32(row.Cells["Id"].Value);
 
-                    // Actualizar el artículo en la base de datos
-                    var articulo = new Articulos
+                    string nuevaUrl = row.Cells["ImagenUrl"].Value.ToString();
+
+             
+
+                
+
+                 
+                    // Obtener el nuevo valor modificado para la Columna Descripcion de la Categoria
+                    string nuevaCategoria = row.Cells["Categoria"].Value.ToString();
+
+                    //Pregunta que Categoria es?
+
+                    if (nuevaCategoria == "CELULARES" || nuevaCategoria == "Celulares")
                     {
-                        Id = idArticulo,
-                        Codigo = nuevoCodigo,
-                        Nombre = nuevoValor,
-                        Descripcion = nuevoDescripcion,
-                       IdMarca=NuevoIdMarca,
+                        var categoria = new Categoria
+                        {
+                            Id = 1,
+                            Descripcion = nuevaCategoria
 
-                       IdCategoria=NuevoIdCategoria,
+                        };
+                        await categoriaModule.AgregarCategoria(categoria);
 
-                        Precio = nuevoPrecio
+                        if(nuevaMarca == "Samsung" || nuevaMarca == "SAMSUNG")
+                        {
+                            var marca = new Marca
+                            {
+                                Id = 1,
+                                Descripcion = nuevaMarca
+
+                            };
+                            await marcasModule.AgregarMarca(marca);
 
 
-                    };
+                            var articulo = new Articulos
+                            {
+                                Id = idArticulo,
+                                Codigo = nuevoCodigo,
+                                Nombre = nuevoValor,
+                                Descripcion = nuevoDescripcion,
+                                IdMarca = marca.Id,
 
-                    await result.ModificarArticulos(articulo);
+                                IdCategoria = categoria.Id,
 
-                    var imagen = new Imagenes
+                                Precio = nuevoPrecio
+
+
+                            };
+
+                            await result.ModificarArticulos(articulo);
+
+                            var imagen = new Imagenes
+                            {
+                                Id = id,
+                                IdArticulo = articulo.Id,
+                                ImagenURL = nuevaUrl
+
+
+                            };
+
+                            //Modifica la Imagen
+                            await imagenesModule.ModificarImagen(imagen);
+
+                        }
+
+
+                        if (nuevaMarca == "Apple" || nuevaMarca == "APPLE")
+                        {
+                            var marca = new Marca
+                            {
+                                Id = 2,
+                                Descripcion = nuevaMarca
+
+                            };
+                            await marcasModule.AgregarMarca(marca);
+
+
+                            var articulo = new Articulos
+                            {
+                                Id = idArticulo,
+                                Codigo = nuevoCodigo,
+                                Nombre = nuevoValor,
+                                Descripcion = nuevoDescripcion,
+                                IdMarca = marca.Id,
+
+                                IdCategoria = categoria.Id,
+
+                                Precio = nuevoPrecio
+
+
+                            };
+
+                            await result.ModificarArticulos(articulo);
+
+                            var imagen = new Imagenes
+                            {
+                                Id = id,
+                                IdArticulo = articulo.Id,
+                                ImagenURL = nuevaUrl
+
+
+                            };
+
+                            //Modifica la Imagen
+                            await imagenesModule.ModificarImagen(imagen);
+
+                        }
+
+                        if (nuevaMarca == "Sony" || nuevaMarca == "SONY")
+                        {
+                            var marca = new Marca
+                            {
+                                Id = 3,
+                                Descripcion = nuevaMarca
+
+                            };
+                            await marcasModule.AgregarMarca(marca);
+
+
+                            var articulo = new Articulos
+                            {
+                                Id = idArticulo,
+                                Codigo = nuevoCodigo,
+                                Nombre = nuevoValor,
+                                Descripcion = nuevoDescripcion,
+                                IdMarca = marca.Id,
+
+                                IdCategoria = categoria.Id,
+
+                                Precio = nuevoPrecio
+
+
+                            };
+
+                            await result.ModificarArticulos(articulo);
+
+                            var imagen = new Imagenes
+                            {
+                                Id = id,
+                                IdArticulo = articulo.Id,
+                                ImagenURL = nuevaUrl
+
+
+                            };
+
+                            //Modifica la Imagen
+                            await imagenesModule.ModificarImagen(imagen);
+
+                        }
+
+                        if (nuevaMarca == "Huawei" || nuevaMarca == "HUAWEI")
+                        {
+                            var marca = new Marca
+                            {
+                                Id = 4,
+                                Descripcion = nuevaMarca
+
+                            };
+                            await marcasModule.AgregarMarca(marca);
+
+
+                            var articulo = new Articulos
+                            {
+                                Id = idArticulo,
+                                Codigo = nuevoCodigo,
+                                Nombre = nuevoValor,
+                                Descripcion = nuevoDescripcion,
+                                IdMarca = marca.Id,
+
+                                IdCategoria = categoria.Id,
+
+                                Precio = nuevoPrecio
+
+
+                            };
+
+                            await result.ModificarArticulos(articulo);
+
+                            var imagen = new Imagenes
+                            {
+                                Id = id,
+                                IdArticulo = articulo.Id,
+                                ImagenURL = nuevaUrl
+
+
+                            };
+
+                            //Modifica la Imagen
+                            await imagenesModule.ModificarImagen(imagen);
+
+                        }
+
+                        if (nuevaMarca == "Motorola" || nuevaMarca == "MOTOROLA")
+                        {
+                            var marca = new Marca
+                            {
+                                Id = 5,
+                                Descripcion = nuevaMarca
+
+                            };
+                            await marcasModule.AgregarMarca(marca);
+
+
+
+                            var articulo = new Articulos
+                            {
+                                Id = idArticulo,
+                                Codigo = nuevoCodigo,
+                                Nombre = nuevoValor,
+                                Descripcion = nuevoDescripcion,
+                                IdMarca = marca.Id,
+
+                                IdCategoria = categoria.Id,
+
+                                Precio = nuevoPrecio
+
+
+                            };
+
+                            await result.ModificarArticulos(articulo);
+
+                            var imagen = new Imagenes
+                            {
+                                Id = id,
+                                IdArticulo = articulo.Id,
+                                ImagenURL = nuevaUrl
+
+
+                            };
+
+                            //Modifica la Imagen
+                            await imagenesModule.ModificarImagen(imagen);
+                        }
+
+                    }
+                    else if (nuevaCategoria == "TELEVISORES" || nuevaCategoria == "Televisores")
                     {
-                        Id=id,
-                        IdArticulo=idArticulo,
-                        ImagenURL=nuevaUrl
-                       
+                        var categoria = new Categoria
+                        {
+                            Id = 2,
+                            Descripcion = nuevaCategoria
 
-                    };
-
-                    //Cambiar  nombre de Metodo
-                    await imagenesModule.ModificarImagen(imagen);
+                        };
+                        await categoriaModule.AgregarCategoria(categoria);
 
 
-               
+                        if (nuevaMarca == "Samsung" || nuevaMarca == "SAMSUNG")
+                        {
+                            var marca = new Marca
+                            {
+                                Id = 1,
+                                Descripcion = nuevaMarca
+
+                            };
+                            await marcasModule.AgregarMarca(marca);
+
+
+                            var articulo = new Articulos
+                            {
+                                Id = idArticulo,
+                                Codigo = nuevoCodigo,
+                                Nombre = nuevoValor,
+                                Descripcion = nuevoDescripcion,
+                                IdMarca = marca.Id,
+
+                                IdCategoria = categoria.Id,
+
+                                Precio = nuevoPrecio
+
+
+                            };
+
+                            await result.ModificarArticulos(articulo);
+
+                            var imagen = new Imagenes
+                            {
+                                Id = id,
+                                IdArticulo = articulo.Id,
+                                ImagenURL = nuevaUrl
+
+
+                            };
+
+                            //Modifica la Imagen
+                            await imagenesModule.ModificarImagen(imagen);
+
+                        }
+
+
+                        if (nuevaMarca == "Apple" || nuevaMarca == "APPLE")
+                        {
+                            var marca = new Marca
+                            {
+                                Id = 2,
+                                Descripcion = nuevaMarca
+
+                            };
+                            await marcasModule.AgregarMarca(marca);
+
+
+                            var articulo = new Articulos
+                            {
+                                Id = idArticulo,
+                                Codigo = nuevoCodigo,
+                                Nombre = nuevoValor,
+                                Descripcion = nuevoDescripcion,
+                                IdMarca = marca.Id,
+
+                                IdCategoria = categoria.Id,
+
+                                Precio = nuevoPrecio
+
+
+                            };
+
+                            await result.ModificarArticulos(articulo);
+
+                            var imagen = new Imagenes
+                            {
+                                Id = id,
+                                IdArticulo = articulo.Id,
+                                ImagenURL = nuevaUrl
+
+
+                            };
+
+                            //Modifica la Imagen
+                            await imagenesModule.ModificarImagen(imagen);
+
+                        }
+
+                        if (nuevaMarca == "Sony" || nuevaMarca == "SONY")
+                        {
+                            var marca = new Marca
+                            {
+                                Id = 3,
+                                Descripcion = nuevaMarca
+
+                            };
+                            await marcasModule.AgregarMarca(marca);
+
+
+                            var articulo = new Articulos
+                            {
+                                Id = idArticulo,
+                                Codigo = nuevoCodigo,
+                                Nombre = nuevoValor,
+                                Descripcion = nuevoDescripcion,
+                                IdMarca = marca.Id,
+
+                                IdCategoria = categoria.Id,
+
+                                Precio = nuevoPrecio
+
+
+                            };
+
+                            await result.ModificarArticulos(articulo);
+
+                            var imagen = new Imagenes
+                            {
+                                Id = id,
+                                IdArticulo = articulo.Id,
+                                ImagenURL = nuevaUrl
+
+
+                            };
+
+                            //Modifica la Imagen
+                            await imagenesModule.ModificarImagen(imagen);
+
+                        }
+
+                        if (nuevaMarca == "Huawei" || nuevaMarca == "HUAWEI")
+                        {
+                            var marca = new Marca
+                            {
+                                Id = 4,
+                                Descripcion = nuevaMarca
+
+                            };
+                            await marcasModule.AgregarMarca(marca);
+
+
+                            var articulo = new Articulos
+                            {
+                                Id = idArticulo,
+                                Codigo = nuevoCodigo,
+                                Nombre = nuevoValor,
+                                Descripcion = nuevoDescripcion,
+                                IdMarca = marca.Id,
+
+                                IdCategoria = categoria.Id,
+
+                                Precio = nuevoPrecio
+
+
+                            };
+
+                            await result.ModificarArticulos(articulo);
+
+                            var imagen = new Imagenes
+                            {
+                                Id = id,
+                                IdArticulo = articulo.Id,
+                                ImagenURL = nuevaUrl
+
+
+                            };
+
+                            //Modifica la Imagen
+                            await imagenesModule.ModificarImagen(imagen);
+
+                        }
+
+                        if (nuevaMarca == "Motorola" || nuevaMarca == "MOTOROLA")
+                        {
+                            var marca = new Marca
+                            {
+                                Id = 5,
+                                Descripcion = nuevaMarca
+
+                            };
+                            await marcasModule.AgregarMarca(marca);
+
+
+
+                            var articulo = new Articulos
+                            {
+                                Id = idArticulo,
+                                Codigo = nuevoCodigo,
+                                Nombre = nuevoValor,
+                                Descripcion = nuevoDescripcion,
+                                IdMarca = marca.Id,
+
+                                IdCategoria = categoria.Id,
+
+                                Precio = nuevoPrecio
+
+
+                            };
+
+                            await result.ModificarArticulos(articulo);
+
+                            var imagen = new Imagenes
+                            {
+                                Id = id,
+                                IdArticulo = articulo.Id,
+                                ImagenURL = nuevaUrl
+
+
+                            };
+
+                            //Modifica la Imagen
+                            await imagenesModule.ModificarImagen(imagen);
+                        }
+
+                    }
+                    else if (nuevaCategoria == "MEDIA" || nuevaCategoria == "Media")
+                    {
+                        var categoria = new Categoria
+                        {
+                            Id = 3,
+                            Descripcion = nuevaCategoria
+
+                        };
+                        await categoriaModule.AgregarCategoria(categoria);
+
+
+                        if (nuevaMarca == "Samsung" || nuevaMarca == "SAMSUNG")
+                        {
+                            var marca = new Marca
+                            {
+                                Id = 1,
+                                Descripcion = nuevaMarca
+
+                            };
+                            await marcasModule.AgregarMarca(marca);
+
+
+                            var articulo = new Articulos
+                            {
+                                Id = idArticulo,
+                                Codigo = nuevoCodigo,
+                                Nombre = nuevoValor,
+                                Descripcion = nuevoDescripcion,
+                                IdMarca = marca.Id,
+
+                                IdCategoria = categoria.Id,
+
+                                Precio = nuevoPrecio
+
+
+                            };
+
+                            await result.ModificarArticulos(articulo);
+
+                            var imagen = new Imagenes
+                            {
+                                Id = id,
+                                IdArticulo = articulo.Id,
+                                ImagenURL = nuevaUrl
+
+
+                            };
+
+                            //Modifica la Imagen
+                            await imagenesModule.ModificarImagen(imagen);
+
+                        }
+
+
+                        if (nuevaMarca == "Apple" || nuevaMarca == "APPLE")
+                        {
+                            var marca = new Marca
+                            {
+                                Id = 2,
+                                Descripcion = nuevaMarca
+
+                            };
+                            await marcasModule.AgregarMarca(marca);
+
+
+                            var articulo = new Articulos
+                            {
+                                Id = idArticulo,
+                                Codigo = nuevoCodigo,
+                                Nombre = nuevoValor,
+                                Descripcion = nuevoDescripcion,
+                                IdMarca = marca.Id,
+
+                                IdCategoria = categoria.Id,
+
+                                Precio = nuevoPrecio
+
+
+                            };
+
+                            await result.ModificarArticulos(articulo);
+
+                            var imagen = new Imagenes
+                            {
+                                Id = id,
+                                IdArticulo = articulo.Id,
+                                ImagenURL = nuevaUrl
+
+
+                            };
+
+                            //Modifica la Imagen
+                            await imagenesModule.ModificarImagen(imagen);
+
+                        }
+
+                        if (nuevaMarca == "Sony" || nuevaMarca == "SONY")
+                        {
+                            var marca = new Marca
+                            {
+                                Id = 3,
+                                Descripcion = nuevaMarca
+
+                            };
+                            await marcasModule.AgregarMarca(marca);
+
+
+                            var articulo = new Articulos
+                            {
+                                Id = idArticulo,
+                                Codigo = nuevoCodigo,
+                                Nombre = nuevoValor,
+                                Descripcion = nuevoDescripcion,
+                                IdMarca = marca.Id,
+
+                                IdCategoria = categoria.Id,
+
+                                Precio = nuevoPrecio
+
+
+                            };
+
+                            await result.ModificarArticulos(articulo);
+
+                            var imagen = new Imagenes
+                            {
+                                Id = id,
+                                IdArticulo = articulo.Id,
+                                ImagenURL = nuevaUrl
+
+
+                            };
+
+                            //Modifica la Imagen
+                            await imagenesModule.ModificarImagen(imagen);
+
+                        }
+
+                        if (nuevaMarca == "Huawei" || nuevaMarca == "HUAWEI")
+                        {
+                            var marca = new Marca
+                            {
+                                Id = 4,
+                                Descripcion = nuevaMarca
+
+                            };
+                            await marcasModule.AgregarMarca(marca);
+
+
+                            var articulo = new Articulos
+                            {
+                                Id = idArticulo,
+                                Codigo = nuevoCodigo,
+                                Nombre = nuevoValor,
+                                Descripcion = nuevoDescripcion,
+                                IdMarca = marca.Id,
+
+                                IdCategoria = categoria.Id,
+
+                                Precio = nuevoPrecio
+
+
+                            };
+
+                            await result.ModificarArticulos(articulo);
+
+                            var imagen = new Imagenes
+                            {
+                                Id = id,
+                                IdArticulo = articulo.Id,
+                                ImagenURL = nuevaUrl
+
+
+                            };
+
+                            //Modifica la Imagen
+                            await imagenesModule.ModificarImagen(imagen);
+
+                        }
+
+                        if (nuevaMarca == "Motorola" || nuevaMarca == "MOTOROLA")
+                        {
+                            var marca = new Marca
+                            {
+                                Id = 5,
+                                Descripcion = nuevaMarca
+
+                            };
+                            await marcasModule.AgregarMarca(marca);
+
+
+
+                            var articulo = new Articulos
+                            {
+                                Id = idArticulo,
+                                Codigo = nuevoCodigo,
+                                Nombre = nuevoValor,
+                                Descripcion = nuevoDescripcion,
+                                IdMarca = marca.Id,
+
+                                IdCategoria = categoria.Id,
+
+                                Precio = nuevoPrecio
+
+
+                            };
+
+                            await result.ModificarArticulos(articulo);
+
+                            var imagen = new Imagenes
+                            {
+                                Id = id,
+                                IdArticulo = articulo.Id,
+                                ImagenURL = nuevaUrl
+
+
+                            };
+
+                            //Modifica la Imagen
+                            await imagenesModule.ModificarImagen(imagen);
+                        }
+
+                    }
+
+                    else if (nuevaCategoria == "AUDIO" || nuevaCategoria == "Audio")
+                    {
+                        var categoria = new Categoria
+                        {
+                            Id = 4,
+                            Descripcion = nuevaCategoria
+
+                        };
+                        await categoriaModule.AgregarCategoria(categoria);
+
+
+                        if (nuevaMarca == "Samsung" || nuevaMarca == "SAMSUNG")
+                        {
+                            var marca1 = new Marca
+                            {
+                                Id = 1,
+                                Descripcion = nuevaMarca
+
+                            };
+                            await marcasModule.AgregarMarca(marca1);
+
+
+                            var articulo = new Articulos
+                            {
+                                Id = idArticulo,
+                                Codigo = nuevoCodigo,
+                                Nombre = nuevoValor,
+                                Descripcion = nuevoDescripcion,
+                                IdMarca = marca1.Id,
+
+                                IdCategoria = categoria.Id,
+
+                                Precio = nuevoPrecio
+
+
+                            };
+
+                            await result.ModificarArticulos(articulo);
+
+                            var imagen = new Imagenes
+                            {
+                                Id = id,
+                                IdArticulo = articulo.Id,
+                                ImagenURL = nuevaUrl
+
+
+                            };
+
+                            //Modifica la Imagen
+                            await imagenesModule.ModificarImagen(imagen);
+
+                        }
+
+
+                        if (nuevaMarca == "Apple" || nuevaMarca == "APPLE")
+                        {
+                            var marca2 = new Marca
+                            {
+                                Id = 2,
+                                Descripcion = nuevaMarca
+
+                            };
+                            await marcasModule.AgregarMarca(marca2);
+
+
+                            var articulo = new Articulos
+                            {
+                                Id = idArticulo,
+                                Codigo = nuevoCodigo,
+                                Nombre = nuevoValor,
+                                Descripcion = nuevoDescripcion,
+                                IdMarca = marca2.Id,
+
+                                IdCategoria = categoria.Id,
+
+                                Precio = nuevoPrecio
+
+
+                            };
+
+                            await result.ModificarArticulos(articulo);
+
+                            var imagen = new Imagenes
+                            {
+                                Id = id,
+                                IdArticulo = articulo.Id,
+                                ImagenURL = nuevaUrl
+
+
+                            };
+
+                            //Modifica la Imagen
+                            await imagenesModule.ModificarImagen(imagen);
+
+                        }
+
+                        if (nuevaMarca == "Sony" || nuevaMarca == "SONY")
+                        {
+                            var marca3 = new Marca
+                            {
+                                Id = 3,
+                                Descripcion = nuevaMarca
+
+                            };
+                            await marcasModule.AgregarMarca(marca3);
+
+
+                            var articulo = new Articulos
+                            {
+                                Id = idArticulo,
+                                Codigo = nuevoCodigo,
+                                Nombre = nuevoValor,
+                                Descripcion = nuevoDescripcion,
+                                IdMarca = marca3.Id,
+
+                                IdCategoria = categoria.Id,
+
+                                Precio = nuevoPrecio
+
+
+                            };
+
+                            await result.ModificarArticulos(articulo);
+
+                            var imagen = new Imagenes
+                            {
+                                Id = id,
+                                IdArticulo = articulo.Id,
+                                ImagenURL = nuevaUrl
+
+
+                            };
+
+                            //Modifica la Imagen
+                            await imagenesModule.ModificarImagen(imagen);
+
+                        }
+
+                        if (nuevaMarca == "Huawei" || nuevaMarca == "HUAWEI")
+                        {
+                            var marca4 = new Marca
+                            {
+                                Id = 4,
+                                Descripcion = nuevaMarca
+
+                            };
+                            await marcasModule.AgregarMarca(marca4);
+
+
+                            var articulo = new Articulos
+                            {
+                                Id = idArticulo,
+                                Codigo = nuevoCodigo,
+                                Nombre = nuevoValor,
+                                Descripcion = nuevoDescripcion,
+                                IdMarca = marca4.Id,
+
+                                IdCategoria = categoria.Id,
+
+                                Precio = nuevoPrecio
+
+
+                            };
+
+                            await result.ModificarArticulos(articulo);
+
+                            var imagen = new Imagenes
+                            {
+                                Id = id,
+                                IdArticulo = articulo.Id,
+                                ImagenURL = nuevaUrl
+
+
+                            };
+
+                            //Modifica la Imagen
+                            await imagenesModule.ModificarImagen(imagen);
+
+                        }
+
+                        if (nuevaMarca == "Motorola" || nuevaMarca == "MOTOROLA")
+                        {
+                            var marca = new Marca
+                            {
+                                Id = 5,
+                                Descripcion = nuevaMarca
+
+                            };
+                            await marcasModule.AgregarMarca(marca);
+
+                            if (nuevaMarca == "Samsung" || nuevaMarca == "SAMSUNG")
+                            {
+                                var marca5 = new Marca
+                                {
+                                    Id = 1,
+                                    Descripcion = nuevaMarca
+
+                                };
+                                await marcasModule.AgregarMarca(marca5);
+
+
+                                var articulo = new Articulos
+                                {
+                                    Id = idArticulo,
+                                    Codigo = nuevoCodigo,
+                                    Nombre = nuevoValor,
+                                    Descripcion = nuevoDescripcion,
+                                    IdMarca = marca5.Id,
+
+                                    IdCategoria = categoria.Id,
+
+                                    Precio = nuevoPrecio
+
+
+                                };
+
+                                await result.ModificarArticulos(articulo);
+
+                                var imagen = new Imagenes
+                                {
+                                    Id = id,
+                                    IdArticulo = articulo.Id,
+                                    ImagenURL = nuevaUrl
+
+
+                                };
+
+                                //Modifica la Imagen
+                                await imagenesModule.ModificarImagen(imagen);
+
+                            }
+
+
+                            if (nuevaMarca == "Apple" || nuevaMarca == "APPLE")
+                            {
+                                var marca6 = new Marca
+                                {
+                                    Id = 2,
+                                    Descripcion = nuevaMarca
+
+                                };
+                                await marcasModule.AgregarMarca(marca6);
+
+
+                                var articulo = new Articulos
+                                {
+                                    Id = idArticulo,
+                                    Codigo = nuevoCodigo,
+                                    Nombre = nuevoValor,
+                                    Descripcion = nuevoDescripcion,
+                                    IdMarca = marca6.Id,
+
+                                    IdCategoria = categoria.Id,
+
+                                    Precio = nuevoPrecio
+
+
+                                };
+
+                                await result.ModificarArticulos(articulo);
+
+                                var imagen = new Imagenes
+                                {
+                                    Id = id,
+                                    IdArticulo = articulo.Id,
+                                    ImagenURL = nuevaUrl
+
+
+                                };
+
+                                //Modifica la Imagen
+                                await imagenesModule.ModificarImagen(imagen);
+
+                            }
+
+                            if (nuevaMarca == "Sony" || nuevaMarca == "SONY")
+                            {
+                                var marca7 = new Marca
+                                {
+                                    Id = 3,
+                                    Descripcion = nuevaMarca
+
+                                };
+                                await marcasModule.AgregarMarca(marca7);
+
+
+                                var articulo = new Articulos
+                                {
+                                    Id = idArticulo,
+                                    Codigo = nuevoCodigo,
+                                    Nombre = nuevoValor,
+                                    Descripcion = nuevoDescripcion,
+                                    IdMarca = marca7.Id,
+
+                                    IdCategoria = categoria.Id,
+
+                                    Precio = nuevoPrecio
+
+
+                                };
+
+                                await result.ModificarArticulos(articulo);
+
+                                var imagen = new Imagenes
+                                {
+                                    Id = id,
+                                    IdArticulo = articulo.Id,
+                                    ImagenURL = nuevaUrl
+
+
+                                };
+
+                                //Modifica la Imagen
+                                await imagenesModule.ModificarImagen(imagen);
+
+                            }
+
+                            if (nuevaMarca == "Huawei" || nuevaMarca == "HUAWEI")
+                            {
+                                var marca8 = new Marca
+                                {
+                                    Id = 4,
+                                    Descripcion = nuevaMarca
+
+                                };
+                                await marcasModule.AgregarMarca(marca8);
+
+
+                                var articulo = new Articulos
+                                {
+                                    Id = idArticulo,
+                                    Codigo = nuevoCodigo,
+                                    Nombre = nuevoValor,
+                                    Descripcion = nuevoDescripcion,
+                                    IdMarca = marca8.Id,
+
+                                    IdCategoria = categoria.Id,
+
+                                    Precio = nuevoPrecio
+
+
+                                };
+
+                                await result.ModificarArticulos(articulo);
+
+                                var imagen = new Imagenes
+                                {
+                                    Id = id,
+                                    IdArticulo = articulo.Id,
+                                    ImagenURL = nuevaUrl
+
+
+                                };
+
+                                //Modifica la Imagen
+                                await imagenesModule.ModificarImagen(imagen);
+
+                            }
+
+                            if (nuevaMarca == "Motorola" || nuevaMarca == "MOTOROLA")
+                            {
+                                var marca9 = new Marca
+                                {
+                                    Id = 5,
+                                    Descripcion = nuevaMarca
+
+                                };
+                                await marcasModule.AgregarMarca(marca9);
+
+
+
+                                var articulo = new Articulos
+                                {
+                                    Id = idArticulo,
+                                    Codigo = nuevoCodigo,
+                                    Nombre = nuevoValor,
+                                    Descripcion = nuevoDescripcion,
+                                    IdMarca = marca9.Id,
+
+                                    IdCategoria = categoria.Id,
+
+                                    Precio = nuevoPrecio
+
+
+                                };
+
+                                await result.ModificarArticulos(articulo);
+
+                                var imagen = new Imagenes
+                                {
+                                    Id = id,
+                                    IdArticulo = articulo.Id,
+                                    ImagenURL = nuevaUrl
+
+
+                                };
+
+                                //Modifica la Imagen
+                                await imagenesModule.ModificarImagen(imagen);
+                            }
+
+
+
+                        }
+
+                    }
+
+                  
+
+
+
+
+
 
                 }
 
                 // Mostrar un mensaje de éxito al usuario
                 MessageBox.Show("Los cambios se han guardado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                dataGridView_Modificar.DataSource = null;
             }
             catch (Exception ex)
             {
