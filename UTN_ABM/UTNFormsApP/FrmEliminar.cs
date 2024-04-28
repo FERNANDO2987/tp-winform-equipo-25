@@ -19,6 +19,28 @@ namespace UTNFormsApP
 
         private void btn_BuscarDetalle_Click(object sender, EventArgs e)
         {
+            //BuscarDetalle();
+
+
+        }
+
+
+        private void text_BuscarDetalle_TextChanged(object sender, EventArgs e)
+        {
+
+            // BuscarDetalle();
+        }
+
+        private void btn_BuscarDetalle_Click_1(object sender, EventArgs e)
+        {
+            //BuscarDetalle();
+
+        }
+
+        private void btn_Eliminar_Click(object sender, EventArgs e)
+        {
+            //EliminarDetalle();
+
 
         }
     }

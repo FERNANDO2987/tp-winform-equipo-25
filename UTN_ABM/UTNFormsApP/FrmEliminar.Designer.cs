@@ -52,6 +52,7 @@
             this.text_BuscarDetalle.Name = "text_BuscarDetalle";
             this.text_BuscarDetalle.Size = new System.Drawing.Size(460, 20);
             this.text_BuscarDetalle.TabIndex = 3;
+            this.text_BuscarDetalle.TextChanged += new System.EventHandler(this.text_BuscarDetalle_TextChanged);
             // 
             // btn_BuscarDetalle
             // 
@@ -65,6 +66,7 @@
             this.btn_BuscarDetalle.TabIndex = 17;
             this.btn_BuscarDetalle.Text = "Buscar";
             this.btn_BuscarDetalle.UseVisualStyleBackColor = false;
+            this.btn_BuscarDetalle.Click += new System.EventHandler(this.btn_BuscarDetalle_Click_1);
             // 
             // dataGridView_Detalles
             // 
@@ -89,6 +91,7 @@
             this.btn_Eliminar.TabIndex = 19;
             this.btn_Eliminar.Text = "Eliminar";
             this.btn_Eliminar.UseVisualStyleBackColor = false;
+            this.btn_Eliminar.Click += new System.EventHandler(this.btn_Eliminar_Click);
             // 
             // FrmEliminar
             // 
