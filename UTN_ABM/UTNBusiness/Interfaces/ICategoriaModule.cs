@@ -11,7 +11,7 @@ namespace UTNBusiness.Interfaces
     {
 
         Task<List<Categoria>> ObtenerCategorias();
-        Task<Categoria> AgregarCategorias(Categoria obj);
+        Task<Categoria> AgregarCategoria(Categoria obj);
 
 
     }

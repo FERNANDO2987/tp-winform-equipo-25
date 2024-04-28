@@ -23,7 +23,7 @@ namespace UTNBusiness.Module
             sqlconString = connectionString;
         }
 
-        public async Task<Categoria> AgregarCategorias(Categoria obj)
+        public async Task<Categoria> AgregarCategoria(Categoria obj)
         {
             var conn = new SqlConnection(sqlconString);
 

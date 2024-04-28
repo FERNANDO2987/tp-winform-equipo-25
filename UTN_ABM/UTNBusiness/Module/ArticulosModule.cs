@@ -515,6 +515,7 @@ namespace UTNBusiness.Module
                         ImagenUrl = Convert.ToString(reader["ImagenUrl"]),
                         IdMarca = Convert.ToInt32(reader["Id"]),
                         IdCategoria = Convert.ToInt32(reader["Id"]),
+                        IdImagen = Convert.ToInt32(reader["Id"])
                     });
                 }
 

@@ -99,7 +99,7 @@ namespace UTNBusiness.Module
 
             var conn = new SqlConnection(sqlconString);
 
-            SqlCommand command = new SqlCommand("ModificarImagenes", conn)
+            SqlCommand command = new SqlCommand("ModificarImagen", conn)
             {
                 CommandType = System.Data.CommandType.StoredProcedure
             };

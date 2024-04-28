@@ -10,6 +10,7 @@ namespace UTNBusiness.Interfaces
      public interface IMarcasModule
     {
         Task <List<Marca>> ObtenerMarcas();
-        
+        Task<Marca> AgregarMarca(Marca obj);
+
     }
 }
