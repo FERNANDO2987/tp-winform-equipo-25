@@ -1,6 +1,6 @@
 ﻿USE [CATALOGO_P3_DB]
 GO
-/****** Object:  StoredProcedure [dbo].[ObtenerDatosModificar]    Script Date: 27/04/2024 22:50:46 ******/
+/****** Object:  StoredProcedure [dbo].[ObtenerDatosModificar]    Script Date: 28/04/2024 18:50:23 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -22,7 +22,8 @@ BEGIN
 	 A.Precio,
 	 COALESCE(I.ImagenUrl, 'null') AS ImagenUrl,
 	 M.Id,
-	 C.Id
+	 C.Id,
+	 I.Id
 	 FROM 
 	 ARTICULOS A
 	 LEFT JOIN
