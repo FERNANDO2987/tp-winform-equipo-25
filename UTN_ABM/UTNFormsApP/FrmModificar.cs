@@ -80,13 +80,21 @@ namespace UTNFormsApP
                         dataGridView_Modificar.Columns["ID"].ReadOnly = true;
                         dataGridView_Modificar.Columns["ID"].DefaultCellStyle.SelectionBackColor = dataGridView_Modificar.DefaultCellStyle.BackColor;
 
+                        //Oculta columna de IdMarca
                         dataGridView_Modificar.Columns["IdMarca"].Visible = false;
                         dataGridView_Modificar.Columns["IdMarca"].ReadOnly = true;
                         dataGridView_Modificar.Columns["IdMarca"].DefaultCellStyle.SelectionBackColor = dataGridView_Modificar.DefaultCellStyle.BackColor;
 
-                        //dataGridView_Modificar.Columns["IdCategoria"].Visible = false;
+                        //Oculta columna de IdCategoria
+                        dataGridView_Modificar.Columns["IdCategoria"].Visible = false;
                         dataGridView_Modificar.Columns["IdCategoria"].ReadOnly = true;
                         dataGridView_Modificar.Columns["IdCategoria"].DefaultCellStyle.SelectionBackColor = dataGridView_Modificar.DefaultCellStyle.BackColor;
+
+
+                        //Oculta columna de IdImagen
+                        dataGridView_Modificar.Columns["IdImagen"].Visible = false;
+                        dataGridView_Modificar.Columns["IdImagen"].ReadOnly = true;
+                        dataGridView_Modificar.Columns["IdImagen"].DefaultCellStyle.SelectionBackColor = dataGridView_Modificar.DefaultCellStyle.BackColor;
                     }
                     else
                     {
