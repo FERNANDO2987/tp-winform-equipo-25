@@ -80,8 +80,13 @@ namespace UTNFormsApP
                         dataGridView_Modificar.Columns["ID"].ReadOnly = true;
                         dataGridView_Modificar.Columns["ID"].DefaultCellStyle.SelectionBackColor = dataGridView_Modificar.DefaultCellStyle.BackColor;
 
+                        dataGridView_Modificar.Columns["IdMarca"].Visible = false;
                         dataGridView_Modificar.Columns["IdMarca"].ReadOnly = true;
                         dataGridView_Modificar.Columns["IdMarca"].DefaultCellStyle.SelectionBackColor = dataGridView_Modificar.DefaultCellStyle.BackColor;
+
+                        //dataGridView_Modificar.Columns["IdCategoria"].Visible = false;
+                        dataGridView_Modificar.Columns["IdCategoria"].ReadOnly = true;
+                        dataGridView_Modificar.Columns["IdCategoria"].DefaultCellStyle.SelectionBackColor = dataGridView_Modificar.DefaultCellStyle.BackColor;
                     }
                     else
                     {
@@ -146,13 +151,16 @@ namespace UTNFormsApP
                     // Obtener el nuevo valor modificado para la Columna Descripcion de la Categoria
                     string nuevaCategoria = row.Cells["Categoria"].Value.ToString();
 
+                    int NuevoIdMarca = Convert.ToInt32(row.Cells["IdMarca"].Value);
+
+                    int NuevoIdCategoria = Convert.ToInt32(row.Cells["IdCategoria"].Value);
 
                     // Obtener el nuevo valor modificado para la Columna Precio
                     decimal nuevoPrecio = Convert.ToDecimal(row.Cells["Precio"].Value);
 
-                    // Obtener el nuevo valor modificado para la Columna la Imagen
-                    string nuevaImagen  = row.Cells["ImagenUrl"].Value.ToString();
+                    string nuevaUrl = row.Cells["ImagenUrl"].Value.ToString();
 
+                    int id = Convert.ToInt32(row.Cells["Id"].Value);
 
                     // Actualizar el artículo en la base de datos
                     var articulo = new Articulos
@@ -161,8 +169,9 @@ namespace UTNFormsApP
                         Codigo = nuevoCodigo,
                         Nombre = nuevoValor,
                         Descripcion = nuevoDescripcion,
-                       IdMarca=1,
-                       IdCategoria=1,
+                       IdMarca=NuevoIdMarca,
+
+                       IdCategoria=NuevoIdCategoria,
 
                         Precio = nuevoPrecio
 
@@ -173,15 +182,15 @@ namespace UTNFormsApP
 
                     var imagen = new Imagenes
                     {
-                        Id=1,
+                        Id=id,
                         IdArticulo=idArticulo,
-                        ImagenURL=""
-
+                        ImagenURL=nuevaUrl
+                       
 
                     };
 
                     //Cambiar  nombre de Metodo
-                    await imagenesModule.AgregarImagen(imagen);
+                    await imagenesModule.ModificarImagen(imagen);
 
 
                

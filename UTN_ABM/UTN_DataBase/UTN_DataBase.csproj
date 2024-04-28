@@ -44,8 +44,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="SQL\SP_AgregarCategoria.sql" />
     <Content Include="SQL\SP_ListarArticulos.sql" />
     <Content Include="SQL\SP_ModificarArticulo.sql" />
+    <Content Include="SQL\SP_ModificarImagen.sql" />
     <Content Include="SQL\SP_ObtenerDatosModificar.sql" />
     <Content Include="SQL\SP_AgregarImagenes.sql" />
     <Content Include="SQL\SP_AgregarArticulo.sql" />
