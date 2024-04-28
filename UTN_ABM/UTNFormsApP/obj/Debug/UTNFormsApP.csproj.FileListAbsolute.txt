@@ -125,3 +125,4 @@ D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApp.csproj.CoreCompi
 D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNForms.B91D8A35.Up2Date
 D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.exe
 D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNFormsApP\obj\Debug\UTNFormsApP.pdb
+C:\Users\WACHIN\Desktop\proyecto prog 3\Nueva carpeta\UTN_ABM\UTNFormsApP\bin\Debug\BouncyCastle.Cryptography.xml
