@@ -17,5 +17,9 @@ namespace UTNBusiness.Models
         public string Categoria { get; set; }
         public decimal Precio { get; set; }
         public string ImagenUrl { get; set; }
+        public int IdMarca { get; set; }
+        public int IdCategoria { get; set; }
+        public int IdImagen { get; set; }
+
     }
 }

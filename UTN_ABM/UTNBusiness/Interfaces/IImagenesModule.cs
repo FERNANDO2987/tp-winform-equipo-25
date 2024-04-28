@@ -13,6 +13,7 @@ namespace UTNBusiness.Interfaces
     {
         Task<Imagenes> ObtenerImagen(int idImagen);
         Task<Imagenes> AgregarImagen(Imagenes obj);
+        Task<Imagenes> ModificarImagen(Imagenes obj);
 
     }
 }

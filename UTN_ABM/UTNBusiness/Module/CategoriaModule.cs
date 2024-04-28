@@ -13,7 +13,7 @@ namespace UTNBusiness.Module
     {
         private readonly string sqlconString;
 
-        public CategoriaModule(string connectionString)
+        public  CategoriaModule(string connectionString)
         {
             if (string.IsNullOrWhiteSpace(connectionString))
             {
@@ -23,6 +23,76 @@ namespace UTNBusiness.Module
             sqlconString = connectionString;
         }
 
+        public async Task<Categoria> AgregarCategoria(Categoria obj)
+        {
+            var conn = new SqlConnection(sqlconString);
+
+            SqlCommand command = new SqlCommand("AgregarCategoria", conn)
+            {
+                CommandType = System.Data.CommandType.StoredProcedure
+            };
+            conn.Open();
+
+
+            try
+            {
+                command.Parameters.Add(new SqlParameter("@Id", obj.Id));
+                command.Parameters.Add(new SqlParameter("@Descripcion", obj.Descripcion));
+                
+
+
+                var reader = command.ExecuteReader();
+
+
+                try
+                {
+                    while (reader.Read())
+                    {
+                        /// Validacion para Identity, devuelve el valor de las tres formas
+                        if (reader[0].GetType() == typeof(int))
+                        {
+                            obj.Id = reader.GetInt32(0);
+                        }
+                        else
+                        if (reader[0].GetType() == typeof(decimal))
+                        {
+                            obj.Id = (int)reader.GetDecimal(0);
+                        }
+                        else
+                        {
+                            obj.Id = (int)reader.GetInt64(0);
+
+                        }
+
+
+                    }
+                }
+                catch (Exception ex)
+                {
+                    var error = "Error parseando datos de sql: " + ex.Message;
+                    return null;
+                }
+
+            }
+
+            catch (Exception ex)
+            {
+                var error = "Error parseando datos de sql: " + ex.Message;
+                return null;
+
+            }
+            finally
+            {
+
+                conn.Close();
+
+
+            }
+
+
+            return obj;
+        
+    }
 
         public async Task<List<Categoria>> ObtenerCategorias()
         {

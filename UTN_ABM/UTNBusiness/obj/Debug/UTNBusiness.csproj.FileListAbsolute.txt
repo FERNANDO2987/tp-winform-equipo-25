@@ -16,18 +16,6 @@ C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\UTN
 C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\UTN_ABM\UTN_ABM\UTN_ABM\UTN_ABM\UTNBusiness\obj\Debug\UTNBusin.DC20B92A.Up2Date
 C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\UTN_ABM\UTN_ABM\UTN_ABM\UTN_ABM\UTNBusiness\obj\Debug\UTNBusiness.dll
 C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\UTN_ABM\UTN_ABM\UTN_ABM\UTN_ABM\UTNBusiness\obj\Debug\UTNBusiness.pdb
-C:\Users\WACHIN\Desktop\proyecto prog 3\Nueva carpeta\UTN_ABM\UTNBusiness\bin\Debug\UTNBusiness.dll.config
-C:\Users\WACHIN\Desktop\proyecto prog 3\Nueva carpeta\UTN_ABM\UTNBusiness\bin\Debug\UTNBusiness.dll
-C:\Users\WACHIN\Desktop\proyecto prog 3\Nueva carpeta\UTN_ABM\UTNBusiness\bin\Debug\UTNBusiness.pdb
-C:\Users\WACHIN\Desktop\proyecto prog 3\Nueva carpeta\UTN_ABM\UTNBusiness\bin\Debug\System.Buffers.dll
-C:\Users\WACHIN\Desktop\proyecto prog 3\Nueva carpeta\UTN_ABM\UTNBusiness\bin\Debug\System.Numerics.Vectors.dll
-C:\Users\WACHIN\Desktop\proyecto prog 3\Nueva carpeta\UTN_ABM\UTNBusiness\bin\Debug\System.ValueTuple.dll
-C:\Users\WACHIN\Desktop\proyecto prog 3\Nueva carpeta\UTN_ABM\UTNBusiness\bin\Debug\System.Buffers.xml
-C:\Users\WACHIN\Desktop\proyecto prog 3\Nueva carpeta\UTN_ABM\UTNBusiness\obj\Debug\UTNBusiness.csproj.AssemblyReference.cache
-C:\Users\WACHIN\Desktop\proyecto prog 3\Nueva carpeta\UTN_ABM\UTNBusiness\obj\Debug\UTNBusiness.csproj.CoreCompileInputs.cache
-C:\Users\WACHIN\Desktop\proyecto prog 3\Nueva carpeta\UTN_ABM\UTNBusiness\obj\Debug\UTNBusiness.csproj.CopyComplete
-C:\Users\WACHIN\Desktop\proyecto prog 3\Nueva carpeta\UTN_ABM\UTNBusiness\obj\Debug\UTNBusiness.dll
-C:\Users\WACHIN\Desktop\proyecto prog 3\Nueva carpeta\UTN_ABM\UTNBusiness\obj\Debug\UTNBusiness.pdb
 C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNBusiness\bin\Debug\UTNBusiness.dll.config
 C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNBusiness\bin\Debug\UTNBusiness.dll
 C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNBusiness\bin\Debug\UTNBusiness.pdb
@@ -44,6 +32,18 @@ C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 
 C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNBusiness\obj\Debug\UTNBusin.DC20B92A.Up2Date
 C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNBusiness\obj\Debug\UTNBusiness.dll
 C:\Users\programador\Documents\TECNICO SUPERIOR EN PRGRAMACION_2024\PROGRA 3\TP 2\UTN_ABM\UTN_ABM\UTNBusiness\obj\Debug\UTNBusiness.pdb
+C:\Users\WACHIN\Desktop\proyecto prog 3\Nueva carpeta\UTN_ABM\UTNBusiness\bin\Debug\UTNBusiness.dll.config
+C:\Users\WACHIN\Desktop\proyecto prog 3\Nueva carpeta\UTN_ABM\UTNBusiness\bin\Debug\UTNBusiness.dll
+C:\Users\WACHIN\Desktop\proyecto prog 3\Nueva carpeta\UTN_ABM\UTNBusiness\bin\Debug\UTNBusiness.pdb
+C:\Users\WACHIN\Desktop\proyecto prog 3\Nueva carpeta\UTN_ABM\UTNBusiness\bin\Debug\System.Buffers.dll
+C:\Users\WACHIN\Desktop\proyecto prog 3\Nueva carpeta\UTN_ABM\UTNBusiness\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\WACHIN\Desktop\proyecto prog 3\Nueva carpeta\UTN_ABM\UTNBusiness\bin\Debug\System.ValueTuple.dll
+C:\Users\WACHIN\Desktop\proyecto prog 3\Nueva carpeta\UTN_ABM\UTNBusiness\bin\Debug\System.Buffers.xml
+C:\Users\WACHIN\Desktop\proyecto prog 3\Nueva carpeta\UTN_ABM\UTNBusiness\obj\Debug\UTNBusiness.csproj.AssemblyReference.cache
+C:\Users\WACHIN\Desktop\proyecto prog 3\Nueva carpeta\UTN_ABM\UTNBusiness\obj\Debug\UTNBusiness.csproj.CoreCompileInputs.cache
+C:\Users\WACHIN\Desktop\proyecto prog 3\Nueva carpeta\UTN_ABM\UTNBusiness\obj\Debug\UTNBusiness.csproj.CopyComplete
+C:\Users\WACHIN\Desktop\proyecto prog 3\Nueva carpeta\UTN_ABM\UTNBusiness\obj\Debug\UTNBusiness.dll
+C:\Users\WACHIN\Desktop\proyecto prog 3\Nueva carpeta\UTN_ABM\UTNBusiness\obj\Debug\UTNBusiness.pdb
 D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\bin\Debug\UTNBusiness.dll.config
 D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\bin\Debug\UTNBusiness.dll
 D:\ABM_T2_UTN\UTN_ABM\UTN_ABM\UTNBusiness\bin\Debug\UTNBusiness.pdb
