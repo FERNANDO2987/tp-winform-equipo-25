@@ -135,6 +135,18 @@ namespace UTNFormsApP
                         // Agrega cada artículo individualmente al DataGridView
                         dataGridView_Detalles.DataSource = articulos;
 
+                        dataGridView_Detalles.Columns["IdCategoria"].Visible = false;
+                        dataGridView_Detalles.Columns["IdCategoria"].ReadOnly = true;
+                        dataGridView_Detalles.Columns["IdCategoria"].DefaultCellStyle.SelectionBackColor = dataGridView_Detalles.DefaultCellStyle.BackColor;
+
+                        dataGridView_Detalles.Columns["IdMarca"].Visible = false;
+                        dataGridView_Detalles.Columns["IdMarca"].ReadOnly = true;
+                        dataGridView_Detalles.Columns["IdMarca"].DefaultCellStyle.SelectionBackColor = dataGridView_Detalles.DefaultCellStyle.BackColor;
+
+                        dataGridView_Detalles.Columns["IdImagen"].Visible = false;
+                        dataGridView_Detalles.Columns["IdImagen"].ReadOnly = true;
+                        dataGridView_Detalles.Columns["IdImagen"].DefaultCellStyle.SelectionBackColor = dataGridView_Detalles.DefaultCellStyle.BackColor;
+
 
                     }
                     else

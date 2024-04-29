@@ -60,6 +60,7 @@
             // Lista
             // 
             this.Lista.Controls.Add(this.dataGridView_Listar);
+            this.Lista.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.Lista.Location = new System.Drawing.Point(12, 76);
             this.Lista.Name = "Lista";
             this.Lista.Size = new System.Drawing.Size(684, 383);
