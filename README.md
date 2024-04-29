@@ -8,7 +8,8 @@ El programa cuenta con las siguiente opciones:
 3-Eliminar: se debe buscar el id que quiere eliminar. Una vez encontrado se debe seleccionar la fila. y luego presionar el boton Eliminar.
 4-Detalle: Buscar por criterio el articulo, una vez encontrado se mostrara en el datagridview. Las imagenes se pueden ver seleccionando la culumna imagen en cada campo.
 5-Listar: lista todos los articulos.
-6-Buscar: busca por criterio el articulo.
+6-Buscar: busca por criterio el articulo y muestra en un datagridview.
+7-Salir: sale del programa.
 Todo el Desarrollo se enceuntra en la rama develop
 Esta deasrrollado en .Net Framework 4.8
 
