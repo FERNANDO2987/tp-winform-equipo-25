@@ -122,7 +122,6 @@
             this.cbox_Marca.Name = "cbox_Marca";
             this.cbox_Marca.Size = new System.Drawing.Size(306, 29);
             this.cbox_Marca.TabIndex = 11;
- 
             this.cbox_Marca.KeyDown += new System.Windows.Forms.KeyEventHandler(this.text_Marca_KeyDown);
             // 
             // cbox_Categoria

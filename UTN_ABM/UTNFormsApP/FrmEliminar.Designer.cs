@@ -34,8 +34,10 @@
             this.groupBoxEliminarArticulo = new System.Windows.Forms.GroupBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.text_EliminarArticulo = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Eliminar)).BeginInit();
             this.groupBoxEliminarArticulo.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label_Eliminar
@@ -51,23 +53,24 @@
             // dataGridView_Eliminar
             // 
             this.dataGridView_Eliminar.AllowUserToAddRows = false;
-            this.dataGridView_Eliminar.AllowUserToDeleteRows = false;
             this.dataGridView_Eliminar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_Eliminar.Location = new System.Drawing.Point(12, 148);
+            this.dataGridView_Eliminar.Location = new System.Drawing.Point(6, 19);
             this.dataGridView_Eliminar.Name = "dataGridView_Eliminar";
             this.dataGridView_Eliminar.ReadOnly = true;
-            this.dataGridView_Eliminar.Size = new System.Drawing.Size(672, 218);
+            this.dataGridView_Eliminar.Size = new System.Drawing.Size(672, 168);
             this.dataGridView_Eliminar.TabIndex = 18;
             // 
             // btn_Eliminar
             // 
-            this.btn_Eliminar.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btn_Eliminar.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btn_Eliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btn_Eliminar.FlatAppearance.BorderSize = 0;
+            this.btn_Eliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.IndianRed;
+            this.btn_Eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Eliminar.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.btn_Eliminar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_Eliminar.Location = new System.Drawing.Point(280, 372);
+            this.btn_Eliminar.Location = new System.Drawing.Point(280, 389);
             this.btn_Eliminar.Name = "btn_Eliminar";
-            this.btn_Eliminar.Size = new System.Drawing.Size(114, 30);
+            this.btn_Eliminar.Size = new System.Drawing.Size(114, 38);
             this.btn_Eliminar.TabIndex = 19;
             this.btn_Eliminar.Text = "Eliminar";
             this.btn_Eliminar.UseVisualStyleBackColor = false;
@@ -87,9 +90,10 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.IndianRed;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.btnBuscar.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnBuscar.Location = new System.Drawing.Point(545, 23);
@@ -98,6 +102,7 @@
             this.btnBuscar.TabIndex = 16;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // text_EliminarArticulo
             // 
@@ -108,15 +113,26 @@
             this.text_EliminarArticulo.Size = new System.Drawing.Size(506, 23);
             this.text_EliminarArticulo.TabIndex = 0;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.dataGridView_Eliminar);
+            this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.groupBox1.Location = new System.Drawing.Point(12, 150);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(684, 206);
+            this.groupBox1.TabIndex = 22;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Articulo";
+            // 
             // FrmEliminar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(708, 600);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBoxEliminarArticulo);
             this.Controls.Add(this.btn_Eliminar);
-            this.Controls.Add(this.dataGridView_Eliminar);
             this.Controls.Add(this.label_Eliminar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmEliminar";
@@ -124,6 +140,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Eliminar)).EndInit();
             this.groupBoxEliminarArticulo.ResumeLayout(false);
             this.groupBoxEliminarArticulo.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -137,5 +154,6 @@
         private System.Windows.Forms.GroupBox groupBoxEliminarArticulo;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox text_EliminarArticulo;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
