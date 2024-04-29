@@ -250,7 +250,7 @@ namespace UTNBusiness.Module
             };
 
             // Agrega un parometro al comando SQL para pasar el ID de los artoculos.
-            command.Parameters.Add(new SqlParameter("@idArticulos", id));
+            command.Parameters.Add(new SqlParameter("@IdArticulo", id));
 
 
             // Abre la conexion a la base de datos.
