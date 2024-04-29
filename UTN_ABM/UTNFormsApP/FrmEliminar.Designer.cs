@@ -29,11 +29,13 @@
         private void InitializeComponent()
         {
             this.label_Eliminar = new System.Windows.Forms.Label();
-            this.text_BuscarDetalle = new System.Windows.Forms.TextBox();
-            this.btn_BuscarDetalle = new System.Windows.Forms.Button();
-            this.dataGridView_Detalles = new System.Windows.Forms.DataGridView();
+            this.dataGridView_Eliminar = new System.Windows.Forms.DataGridView();
             this.btn_Eliminar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Detalles)).BeginInit();
+            this.groupBoxEliminarArticulo = new System.Windows.Forms.GroupBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.text_EliminarArticulo = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Eliminar)).BeginInit();
+            this.groupBoxEliminarArticulo.SuspendLayout();
             this.SuspendLayout();
             // 
             // label_Eliminar
@@ -46,38 +48,16 @@
             this.label_Eliminar.TabIndex = 2;
             this.label_Eliminar.Text = "Eliminar Articulo";
             // 
-            // text_BuscarDetalle
+            // dataGridView_Eliminar
             // 
-            this.text_BuscarDetalle.Location = new System.Drawing.Point(12, 88);
-            this.text_BuscarDetalle.Name = "text_BuscarDetalle";
-            this.text_BuscarDetalle.Size = new System.Drawing.Size(460, 20);
-            this.text_BuscarDetalle.TabIndex = 3;
-            this.text_BuscarDetalle.TextChanged += new System.EventHandler(this.text_BuscarDetalle_TextChanged);
-            // 
-            // btn_BuscarDetalle
-            // 
-            this.btn_BuscarDetalle.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btn_BuscarDetalle.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btn_BuscarDetalle.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.btn_BuscarDetalle.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_BuscarDetalle.Location = new System.Drawing.Point(570, 88);
-            this.btn_BuscarDetalle.Name = "btn_BuscarDetalle";
-            this.btn_BuscarDetalle.Size = new System.Drawing.Size(114, 20);
-            this.btn_BuscarDetalle.TabIndex = 17;
-            this.btn_BuscarDetalle.Text = "Buscar";
-            this.btn_BuscarDetalle.UseVisualStyleBackColor = false;
-            this.btn_BuscarDetalle.Click += new System.EventHandler(this.btn_BuscarDetalle_Click_1);
-            // 
-            // dataGridView_Detalles
-            // 
-            this.dataGridView_Detalles.AllowUserToAddRows = false;
-            this.dataGridView_Detalles.AllowUserToDeleteRows = false;
-            this.dataGridView_Detalles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_Detalles.Location = new System.Drawing.Point(12, 148);
-            this.dataGridView_Detalles.Name = "dataGridView_Detalles";
-            this.dataGridView_Detalles.ReadOnly = true;
-            this.dataGridView_Detalles.Size = new System.Drawing.Size(672, 218);
-            this.dataGridView_Detalles.TabIndex = 18;
+            this.dataGridView_Eliminar.AllowUserToAddRows = false;
+            this.dataGridView_Eliminar.AllowUserToDeleteRows = false;
+            this.dataGridView_Eliminar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_Eliminar.Location = new System.Drawing.Point(12, 148);
+            this.dataGridView_Eliminar.Name = "dataGridView_Eliminar";
+            this.dataGridView_Eliminar.ReadOnly = true;
+            this.dataGridView_Eliminar.Size = new System.Drawing.Size(672, 218);
+            this.dataGridView_Eliminar.TabIndex = 18;
             // 
             // btn_Eliminar
             // 
@@ -93,21 +73,57 @@
             this.btn_Eliminar.UseVisualStyleBackColor = false;
             this.btn_Eliminar.Click += new System.EventHandler(this.btn_Eliminar_Click);
             // 
+            // groupBoxEliminarArticulo
+            // 
+            this.groupBoxEliminarArticulo.Controls.Add(this.btnBuscar);
+            this.groupBoxEliminarArticulo.Controls.Add(this.text_EliminarArticulo);
+            this.groupBoxEliminarArticulo.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.groupBoxEliminarArticulo.Location = new System.Drawing.Point(12, 78);
+            this.groupBoxEliminarArticulo.Name = "groupBoxEliminarArticulo";
+            this.groupBoxEliminarArticulo.Size = new System.Drawing.Size(684, 66);
+            this.groupBoxEliminarArticulo.TabIndex = 21;
+            this.groupBoxEliminarArticulo.TabStop = false;
+            this.groupBoxEliminarArticulo.Text = "Articulo a eliminar";
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnBuscar.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.btnBuscar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnBuscar.Location = new System.Drawing.Point(545, 23);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(114, 33);
+            this.btnBuscar.TabIndex = 16;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            // 
+            // text_EliminarArticulo
+            // 
+            this.text_EliminarArticulo.AccessibleName = "";
+            this.text_EliminarArticulo.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.text_EliminarArticulo.Location = new System.Drawing.Point(18, 29);
+            this.text_EliminarArticulo.Name = "text_EliminarArticulo";
+            this.text_EliminarArticulo.Size = new System.Drawing.Size(506, 23);
+            this.text_EliminarArticulo.TabIndex = 0;
+            // 
             // FrmEliminar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(708, 600);
+            this.Controls.Add(this.groupBoxEliminarArticulo);
             this.Controls.Add(this.btn_Eliminar);
-            this.Controls.Add(this.dataGridView_Detalles);
-            this.Controls.Add(this.btn_BuscarDetalle);
-            this.Controls.Add(this.text_BuscarDetalle);
+            this.Controls.Add(this.dataGridView_Eliminar);
             this.Controls.Add(this.label_Eliminar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmEliminar";
             this.Text = "FrmEliminar";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Detalles)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Eliminar)).EndInit();
+            this.groupBoxEliminarArticulo.ResumeLayout(false);
+            this.groupBoxEliminarArticulo.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -116,9 +132,10 @@
         #endregion
 
         private System.Windows.Forms.Label label_Eliminar;
-        private System.Windows.Forms.TextBox text_BuscarDetalle;
-        private System.Windows.Forms.Button btn_BuscarDetalle;
-        private System.Windows.Forms.DataGridView dataGridView_Detalles;
+        private System.Windows.Forms.DataGridView dataGridView_Eliminar;
         private System.Windows.Forms.Button btn_Eliminar;
+        private System.Windows.Forms.GroupBox groupBoxEliminarArticulo;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.TextBox text_EliminarArticulo;
     }
 }
