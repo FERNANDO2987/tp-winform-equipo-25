@@ -53,16 +53,16 @@
             this.dataGridView_Listar.Location = new System.Drawing.Point(9, 19);
             this.dataGridView_Listar.Name = "dataGridView_Listar";
             this.dataGridView_Listar.ReadOnly = true;
-            this.dataGridView_Listar.Size = new System.Drawing.Size(580, 253);
+            this.dataGridView_Listar.Size = new System.Drawing.Size(669, 358);
             this.dataGridView_Listar.TabIndex = 0;
             this.dataGridView_Listar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_Listar_CellContentClick);
             // 
             // Lista
             // 
             this.Lista.Controls.Add(this.dataGridView_Listar);
-            this.Lista.Location = new System.Drawing.Point(40, 76);
+            this.Lista.Location = new System.Drawing.Point(12, 76);
             this.Lista.Name = "Lista";
-            this.Lista.Size = new System.Drawing.Size(615, 278);
+            this.Lista.Size = new System.Drawing.Size(684, 383);
             this.Lista.TabIndex = 7;
             this.Lista.TabStop = false;
             this.Lista.Text = "Lista";
